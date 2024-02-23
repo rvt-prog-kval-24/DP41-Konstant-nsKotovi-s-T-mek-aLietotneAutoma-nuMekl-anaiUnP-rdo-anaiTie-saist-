@@ -1,7 +1,7 @@
 #  USE CASE diagramma
 
 Paredzēts, ka sistēmu lietos trīs lietotāju klases: viesis, lietotājs un apkalpojošs personāls (skat. 1. att.).
-![DP4-1 Konstantīns Kotovičs Use Case diagramma](atteli\DP4-1 Konstantīns Kotovičs Use Case diagramma.png)
+![DP4-1 Konstantīns Kotovičs Use Case diagramma](Use Case diagramma.png)
 (1. att. Lietojumgadījuma diagramma)
 
 Use-case diagrammas tiek izmantotas datu bāzu projektēšanā, lai identificētu sistēmas funkcijas, to aktorus un to mijiedarbību. 

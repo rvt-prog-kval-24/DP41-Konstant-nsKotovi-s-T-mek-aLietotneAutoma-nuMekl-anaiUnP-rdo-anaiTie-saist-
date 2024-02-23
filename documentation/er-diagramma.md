@@ -16,4 +16,5 @@ Datu bāzes projektēšanā datu kopu un saišu starp tām attēlošanai tika li
 * “Ziņojums” – tabula, kurā ir visi paziņojumi, ko saņem lietotāji. Tā atribūtu kopa ietver ziņojumu, datumu un izlasīšanas statusu. Tabula “Ziņojums” ir saistīta ar tabulu “Lietotājs”. Vienam lietotājam var piederēt vairākie ziņojumi, bet katrs ziņojums var piederēt tikai vienam lietotāja.
 
 ![DP4-1 Konstantīns Kotovičs Entity relationship modelis](https://media.discordapp.net/attachments/968604972730155058/1210666898258395217/Entity_relationship_modelis.png?ex=65eb6469&is=65d8ef69&hm=1f17c173f0a91c0913246d8bd0522612d1f88b9e60e9ca75bf729257a8bdf074&=&format=webp&quality=lossless&width=790&height=905)
+
 4. att. Entity relationship modelis

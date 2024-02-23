@@ -55,13 +55,15 @@
 9. Sistēmai jābūt aprīkotai ar automatizētu darbību iespējām, lai nodrošinātu efektīvu darbību un minimizētu cilvēka iesaisti, it īpaši attiecībā uz rutīnas procesiem vai ilgstošām darbībām.
 10. Jābūt nodrošinātam vispusīgam un pieejamam sistēmas atbalstam, lai ātri novērstu jebkādas darbības vai sistēmas kļūmes, kā arī nodrošinātu lietotāju ar palīdzību un atbalstu sistēmas izmantošanā.
 
-*Sistēmas reģistrācijas formas skice (skat.2.att.)
+* Sistēmas reģistrācijas formas skice (skat.2.att.)
+
 ![DP4-1 Konstantīns Kotovičs Sistēmas reģistrācijas formas skice](https://media.discordapp.net/attachments/968604972730155058/1210658086860226600/Sistemas_registracijas_formas_skice.png?ex=65eb5c34&is=65d8e734&hm=22417d44e6a61e78f547bcf2fb5df630cc349d95774291fb298d7c8208c1908c&=&format=webp&quality=lossless)
+
 2.att. Sistēmas reģistrācijas formas skice
 
 Šī skice attēlo sistēmas interfeisu, kurā lietotāji var reģistrēties. Tajā formā ir 4 lauki un 3 pogas “Sign Up”, lai piereģistrētu jauno lietotāju, “Cancel”, lai atceltu darbību un poga “Already have an account?”, ja lietotājam jau ir konts šajā vietnē.
 
-*Automašīnu pievienošanas formas skice (skat.3.att.)
+* Automašīnu pievienošanas formas skice (skat.3.att.)
 ![DP4-1 Konstantīns Kotovičs Automašīnu pievienošanas formas skice](https://media.discordapp.net/attachments/968604972730155058/1210658086407110677/Automasinu_pievienosanas_formas_skice.png?ex=65eb5c34&is=65d8e734&hm=10440ca2588cdeda56883cedd1ede2c5a537e83654c1dc7775c0c34366175dc6&=&format=webp&quality=lossless)
 3.att. Automašīnu pievienošanas formas skice
 Šī skice attēlo sistēmas interfeisu, kurā apkalpojošs personāls var pievienot jaunas automašīnas.

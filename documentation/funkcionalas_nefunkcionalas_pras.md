@@ -8,24 +8,23 @@
     - Paroles glabāšana, izmantojot drošu hašēšanas algoritmu. Parole tiks ievadīta divas reizes, lai izvairītos no drukas kļūdām. Ja parole, kura tiks ievadīta atkārtoti, nesakrītīs ar sākotnējo variantu, tiks parādīta kļūda.
     -Pēc veikmīgās lietotāja reģistrācijas, ziņojuma logā atnāks vēstule.
 2. Lietotāja autorizācija:
-    - Ja lietotājs eksistē datu bāzē, sistēmai ir jānodrošina autorizācija, pieslēdzoties ar e-pastu un paroli.
+    - Ja lietotājs eksistē datu bāzē, sistēmai ir jānodrošina autorizācija, pieslēdzoties ar lietotājvārdu un paroli.
     - Ja kāds no laukiem nav ievadīts, izvadīt par to paziņojumu.
     - Lauku ievades pārbaude uz pareizību un kļūdas paziņojumi, ja parole vai vārds nesakrīt.
     - Kļūdu izvade, ja ievadītais lietotājvārds neeksistē datu bāzē.
 3. Meklēšanas funkcija automašīnu klāstā:
-    - Ja lietotājs ievada marku vai modeli, vai visus kopā, sistēmai ir jāparāda visi attiecīgie piedāvājumi.
+    - Ja lietotājs ievada marku vai modeli, vai visu kopā, sistēmai ir jāparāda visi attiecīgie piedāvājumi.
     - Ja nav atrasti piedāvājumi, izvadīsies atbilstošs teksts.
-    - Sistēmai ir jānodrošina meklēšanu pēc filtru saraksta, lai lietotāji varētu viegli atlasīt vajadzīgos kritērijus, tādus kā cena un marka.
+    - Sistēmai ir jānodrošina meklēšanu pēc filtru saraksta, lai lietotāji varētu viegli atlasīt vajadzīgos kritērijus, tādus kā cenu intervāls, krāsa, ātrumkārba, marka.
     - Sistēmai ir jānodrošina meklēšana pēc kritērijiem un atslēgvārdiem kopā.
 4. Forma automašīnas pirkšanai ar visiem nepieciešamajiem laukiem:
     - Obligātu lauku pārbaude, telefona numurs, vārds un uzvārds, un arī ka lietotājs piekrīt nosacījumiem.
-    -Sistēmai ir jāparbauda vai lietotājs ievada tieši ciparus laukā priekš telefona numura un pēc nostātījuma tās sākās no “+371”.
-    - Sistēmai jāsaglabā informāciju par izvēlēto krāsu.
+    - Sistēmai ir jāparbauda vai lietotājs ievada tieši ciparus laukā priekš telefona numura un pēc nostātījuma tās sākās no “+371”.
+    - Sistēmai jāsaglabā informāciju par izvēlēto krāsas variantu.
 5. Apkalpojoša personāla funkcijas:
-    - Pasūtījumu apstiprināšana un dzēšana.
-    - Piedāvājumu pievienošana un dzēšana.
+    - Piedāvājumu pievienošana, dzēšana iun informācijas rediģēšana.
     - Klienta un pasūtījumu informācijas apskate un izpildes statusa mainīšana.
-    - Jauno automašīnu krāsu pievinošana vai dzēšana.
+    - Jauno automašīnu krāsu pievie nošana vai dzēšana.
 6. Komentāru atstāšana:
     - Obligātu lauku pārbaude un kļūdas paziņojumu izvadīšana.
     - Lietotāju iespēja atstāt un dzēst savus komentārus.
@@ -33,7 +32,7 @@
     - Apkalpojošajam personālam jābūt iepējai dzēst jebkādu komentāri.
 7. Personīgais lietotāja konts un to rediģēšana:
     - Konta informācija un personalizācijas iespējas, konta attēla maiņa.
-    - Lietotāja paroles rediģēšanas. Ja tagadējais parolis ir ievadīts nepareizi vai jauns parolis un atkārtoti ievadītais neskrtitīs, tad izvadīs kļūdas.
+    - Lietotāja paroles rediģēšanas. Ja tagadējais parolis ir ievadīts nepareizi vai jauns parolis un atkārtoti ievadītais nesakritīs, tad izvadīs kļūdas.
     - Sistēmai ir jānodrošina visu pasūtījumu apskati priekš katra lietotāja un izvadi excel formātā.
 8. Iziešana no profila:
     - Katram lietotājam jābūt iespēja iziet no lietotāja konta.
@@ -64,7 +63,10 @@
 Šī skice attēlo sistēmas interfeisu, kurā lietotāji var reģistrēties. Tajā formā ir 4 lauki un 3 pogas “Sign Up”, lai piereģistrētu jauno lietotāju, “Cancel”, lai atceltu darbību un poga “Already have an account?”, ja lietotājam jau ir konts šajā vietnē.
 
 * Automašīnu pievienošanas formas skice (skat.3.att.)
+
 ![DP4-1 Konstantīns Kotovičs Automašīnu pievienošanas formas skice](https://media.discordapp.net/attachments/968604972730155058/1210658086407110677/Automasinu_pievienosanas_formas_skice.png?ex=65eb5c34&is=65d8e734&hm=10440ca2588cdeda56883cedd1ede2c5a537e83654c1dc7775c0c34366175dc6&=&format=webp&quality=lossless)
+
 3.att. Automašīnu pievienošanas formas skice
+
 Šī skice attēlo sistēmas interfeisu, kurā apkalpojošs personāls var pievienot jaunas automašīnas.
 

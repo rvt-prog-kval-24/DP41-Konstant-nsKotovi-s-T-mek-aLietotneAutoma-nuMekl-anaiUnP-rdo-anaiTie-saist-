@@ -1,0 +1,77 @@
+/* notification-modal.css */
+  
+
+/* Стилизация скроллбара */
+.modal-content {
+    min-height: 15vh; /* Устанавливаем максимальную высоту во вьюпорте (80% от высоты экрана) */
+    overflow-y: auto; /* Включаем вертикальную прокрутку при необходимости */
+  }
+
+/* notification-modal.css */
+
+  
+  .modal {
+    align-items: flex-start;
+  }
+  
+  /* Настраиваем положение модального окна вверху экрана */
+  .modal-dialog {
+    margin: 0 auto;
+    
+    max-width: 500px; /* Устанавливаем максимальную ширину в пикселях */
+}
+  
+
+/* Стилизация уведомления */
+.notification {
+  position: relative; /* Устанавливаем относительное позиционирование для уведомления */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  align-items: center; /* Выравниваем содержимое по вертикали */
+  justify-content: space-between; /* Размещаем элементы по горизонтали справа */
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  position: absolute; /* Устанавливаем абсолютное позиционирование для кнопки удаления */
+  top: 5px; /* Располагаем кнопку удаления вверху */
+  right: 5px; /* Располагаем кнопку удаления справа */
+}
+
+/* Стили для пользовательской кнопки закрытия */
+.custom-close-btn {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Стили для значка "-" */
+.custom-close-btn span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #ffffff; /* Цвет фона для значка "-" */
+  border-radius: 50%; /* Закругление углов для круглого фона */
+}
+
+.notification-form {
+  display: flex;
+  align-items: center;
+}
+

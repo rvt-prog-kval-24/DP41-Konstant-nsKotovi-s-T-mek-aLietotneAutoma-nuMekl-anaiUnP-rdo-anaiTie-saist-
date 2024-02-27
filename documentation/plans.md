@@ -1,6 +1,6 @@
 # Plans
 
-1. Izveidot funkciju: piedāvājuma informācijas rediģēšana. (Aptuveni līdz 1. martam)
+1. Pievienot virsbūves tipu. Izveidot funkciju: piedāvājuma informācijas rediģēšana. (Aptuveni līdz 1. martam)
 2. Pievienot iespēju meklēt automašīnu pēc krāsas un uzlabot filtrēšanas loga dizainu. (Aptuveni līdz 10. martam)
 3. Pievienot iespēju dzēst piedāvājumu no saraksta. (Aptuveni līdz 20. martam)
 4. Pievienot iespēju izvēlēties ātrumkārbu, pievienot lauku datubāzei un pārskatīt struktūru. (Aptuveni līdz 5. aprīlim)

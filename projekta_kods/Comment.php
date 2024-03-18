@@ -28,8 +28,6 @@ class Comment {
         $stmt->execute();
     }
 
-    
-
     public function getTotalOriginalCommentsCount() {
     $sql = "SELECT COUNT(*) as total FROM comments WHERE comments.parent_comment_id IS NULL";
     $stmt = $this->conn->query($sql);
@@ -72,10 +70,8 @@ class Comment {
         date_default_timezone_set('Europe/Riga');
         $date = date("Y-m-d H:i:s");
     
-        // Получаем username пользователя, который оставил ответ
         $replyUsername = $this->getUsernameByUserID($userID);
     
-        // Получаем userID пользователя оригинального комментария
         $originalCommentUserID = $this->getUserIDForOriginalComment($parentCommentID);
     
         $sql = "INSERT INTO comments (comment, userID, date, parent_comment_id) VALUES (:comment, :userID, :date, :parentCommentID)";
@@ -86,18 +82,31 @@ class Comment {
         $stmt->bindParam(':parentCommentID', $parentCommentID);
         $stmt->execute();
     
-        // Вставляем уведомление в таблицу
-        $notificationText = "You have received an answer from '$replyUsername'. Comment '$comment'. Check <a href='forum.php'>forum</a>.";
-        $insertNotification = $this->conn->prepare("INSERT INTO notifications (userID, message) VALUES (:userID, :message)");
-        $insertNotification->execute(array(':userID' => $originalCommentUserID, ':message' => $notificationText));
+        $maxMessageLength = 100; // Максимальная длина сообщения
+        if (strlen($comment) > $maxMessageLength) {
+            $truncatedMessage = substr($comment, 0, $maxMessageLength) . "...";
+            $notificationText = "You have received a reply from '$replyUsername' to your comment: '$truncatedMessage'. For the full message, visit the <a href='forum.php'>forum</a>.";
+
+        } else {
+            $notificationText = "You have received a reply from '$replyUsername' to your comment: '$comment'. Visit the <a href='forum.php'>forum</a> to view the response.";
+        }
+
+        $userMain = new UserMain($userID);
+            
+        $topicName = 'Forum';
+        $topicID = $userMain->getNotificationTopicIDByName($topicName);
+            
+        $userMain->addNotification($topicID, $notificationText);
     }
     
-    
-    
-    // Метод для получения ответов на комментарии
     public function getRepliesForComment($parentCommentID) {
         $replies = array();
         $this->getRepliesRecursive($parentCommentID, $replies);
+        
+        usort($replies, function($a, $b) {
+            return strtotime($a['date']) - strtotime($b['date']);
+        });
+        
         return $replies;
     }
 
@@ -107,12 +116,12 @@ class Comment {
                 FROM comments 
                 INNER JOIN user ON comments.userID = user.userID 
                 WHERE comments.parent_comment_id = :parentCommentID
-                ORDER BY comments.date ASC"; // Сортировка по дате в возрастающем порядке (новые внизу)
+                ORDER BY comments.date DESC"; // Изменение сортировки на убывающую дату
         
         $stmt = $this->conn->prepare($sql);
         $stmt->bindParam(':parentCommentID', $parentCommentID, PDO::PARAM_INT);
         $stmt->execute();
-    
+
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             $reply = array(
                 'commentID' => $row['commentID'],
@@ -121,14 +130,13 @@ class Comment {
                 'comment' => $row['comment'],
                 'date' => $row['date']
             );
-    
+
             $replies[] = $reply;
-    
+
             // Рекурсивно вызываем эту функцию для поиска ответов на этот ответ
             $this->getRepliesRecursive($row['commentID'], $replies);
         }
-    }
-    
+    }  
     
     // метод для получения имени пользователя оригинального комментария
     public function getUsernameForOriginalComment($commentID) {

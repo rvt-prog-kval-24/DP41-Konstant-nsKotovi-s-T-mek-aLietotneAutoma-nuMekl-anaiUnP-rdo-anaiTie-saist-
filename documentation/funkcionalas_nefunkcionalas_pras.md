@@ -15,21 +15,22 @@
 3. Meklēšanas funkcija automašīnu klāstā:
     - Ja lietotājs ievada marku vai modeli, vai visu kopā, sistēmai ir jāparāda visi attiecīgie piedāvājumi.
     - Ja nav atrasti piedāvājumi, izvadīsies atbilstošs teksts.
-    - Sistēmai ir jānodrošina meklēšanu pēc filtru saraksta, lai lietotāji varētu viegli atlasīt vajadzīgos kritērijus, tādus kā cenu intervāls, krāsa, ātrumkārba, marka.
+    - Sistēmai ir jānodrošina meklēšanu pēc filtru saraksta, lai lietotāji varētu viegli atlasīt vajadzīgos kritērijus, tādus kā cenu intervāls, krāsa, ātrumkārba, marka, modelis, virbūves tips.
     - Sistēmai ir jānodrošina meklēšana pēc kritērijiem un atslēgvārdiem kopā.
 4. Forma automašīnas pirkšanai ar visiem nepieciešamajiem laukiem:
     - Obligātu lauku pārbaude, telefona numurs, vārds un uzvārds, un arī ka lietotājs piekrīt nosacījumiem.
     - Sistēmai ir jāparbauda vai lietotājs ievada tieši ciparus laukā priekš telefona numura un pēc nostātījuma tās sākās no “+371”.
     - Sistēmai jāsaglabā informāciju par izvēlēto krāsas variantu.
+    - Jaizvada logu ar visu informāciju par pasūtijumu priekš apstiprināšanai.
 5. Apkalpojoša personāla funkcijas:
     - Piedāvājumu pievienošana, dzēšana iun informācijas rediģēšana.
     - Klienta un pasūtījumu informācijas apskate un izpildes statusa mainīšana.
-    - Jauno automašīnu krāsu pievie nošana vai dzēšana.
+    - Jauno automašīnu krāsu pievienošana vai dzēšana.
 6. Komentāru atstāšana:
     - Obligātu lauku pārbaude un kļūdas paziņojumu izvadīšana.
-    - Lietotāju iespēja atstāt un dzēst savus komentārus.
+    - Lietotāju iespēja atstāt/dzēst savus komentārus, kā arī atbildēt uz citiem.
     - Komentāru laukā jābūt pārbaude uz simbolu skaitu.
-    - Apkalpojošajam personālam jābūt iepējai dzēst jebkādu komentāri.
+    - Apkalpojošajam personālam jābūt iepējai dzēst jebkādu komentāriju.
 7. Personīgais lietotāja konts un to rediģēšana:
     - Konta informācija un personalizācijas iespējas, konta attēla maiņa.
     - Lietotāja paroles rediģēšanas. Ja tagadējais parolis ir ievadīts nepareizi vai jauns parolis un atkārtoti ievadītais nesakritīs, tad izvadīs kļūdas.
@@ -39,6 +40,8 @@
 9. Ziņojumu saņemšanas sistēma:
     - Sistēmai jānosūta paziņojums par veiksmīgu reģistrāciju.
     - Sistēmai jānosūta paziņojums par veiksmīgu pasūtīšanu.
+    - Sistēmai jānosūta paziņojums, ja uz lietotāja komentāriju atbildēja.
+    - Lietotājiem jābūt iespējai paslēpt ziņas par tēmām, kas viņu neinteresē.
     - Lietotājam vajadzētu būt iespēja dzēst ziņojumus no sava konta pasta.
 10. Transportlīdzekļa krāsu variantu attēlošana:
     - Visiem lietotājiem jābūt iespējai apskatīt automobiļa krāsu variantus, un sistēmai jāuzrāda attēls ar izvēlēto krāsu.
@@ -56,7 +59,7 @@
 
 * Sistēmas reģistrācijas formas skice (skat.2.att.)
 
-![DP4-1 Konstantīns Kotovičs Sistēmas reģistrācijas formas skice](https://media.discordapp.net/attachments/968604972730155058/1210658086860226600/Sistemas_registracijas_formas_skice.png?ex=65eb5c34&is=65d8e734&hm=22417d44e6a61e78f547bcf2fb5df630cc349d95774291fb298d7c8208c1908c&=&format=webp&quality=lossless)
+![DP4-1 Konstantīns Kotovičs Sistēmas reģistrācijas formas skice](https://media.discordapp.net/attachments/968604972730155058/1223707728372043796/2.att._Sistemas_registracijas_formas_skice.png?ex=661ad5a1&is=660860a1&hm=daada4aeb6bd9b3dc0e1cf555809482f2d9f4abef19b977861229af1c99c47b3&=&format=webp&quality=lossless&width=755&height=905)
 
 2.att. Sistēmas reģistrācijas formas skice
 

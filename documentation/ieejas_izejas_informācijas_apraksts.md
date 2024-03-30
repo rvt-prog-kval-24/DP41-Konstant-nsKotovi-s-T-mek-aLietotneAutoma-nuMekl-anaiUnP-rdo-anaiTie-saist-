@@ -8,7 +8,6 @@
     - Lietotāja privilēģijas – lietotāja loma – ciparu teksts ar izmēru līdz 10 rakstzīmēm. (piem. “0”).
     - Attēls – lietotāja profila attēls – burtu un ciparu teksts bez ierobežojuma uz rakstzīmēm. (piem. ‘../img/avatar/attēls.png’). 
     - Pieņemto noteikumu statuss - šis lauks norāda uz lietotāja statusu attiecībā uz noteikumu pieņemšanu forumā - ciparu teksts ar ierobežojumu līdz 1 ciparam. (piem. “1”).
-    
  Visi dati tiks ievadīti no tastatūras, izņemot lietotāja privilēģijas un pieņemto noteikumu statusu, to piešķirs sistēma automātiski.
 2. Informācija par **piedāvājumiem** sastāvēs no šādiem datiem.
     - Marka – automašīnas marka – burtu un ciparu teksts ar izmēru līdz 20 rakstzīmēm. (piem. “MBW”).

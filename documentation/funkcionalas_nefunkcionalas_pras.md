@@ -67,7 +67,7 @@
 
 * Automašīnu pievienošanas formas skice (skat.3.att.)
 
-![DP4-1 Konstantīns Kotovičs Automašīnu pievienošanas formas skice](https://media.discordapp.net/attachments/968604972730155058/1210658086407110677/Automasinu_pievienosanas_formas_skice.png?ex=65eb5c34&is=65d8e734&hm=10440ca2588cdeda56883cedd1ede2c5a537e83654c1dc7775c0c34366175dc6&=&format=webp&quality=lossless)
+![DP4-1 Konstantīns Kotovičs Automašīnu pievienošanas formas skice](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/3.att.%20Automašīnu%20pievienošanas%20formas%20skice.png)
 
 3.att. Automašīnu pievienošanas formas skice
 

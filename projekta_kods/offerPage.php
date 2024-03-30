@@ -9,6 +9,9 @@ require_once 'Order.php';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+$userID = $_SESSION['userID'];
+$user = new UserMain($userID);
+$userInfo = $user->getUserInfo();
 
 $offerID = isset($_GET['offerID']);
 if (isset($_GET['offerID'])) {
@@ -78,13 +81,13 @@ if (isset($_POST['submit_order'])) {
 ?>
 <html>
 <head>
-  <?php require 'header.php'; ?>
 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
   <script src="../autosalons/js/script.js" defer></script>
   <script src="../autosalons/js/form-popup.js" defer></script>
   <link rel="stylesheet" href="css/offerPage.css">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
 <script>
 // JavaScript код для установки выбранного цвета в форме
@@ -106,6 +109,7 @@ window.addEventListener('beforeunload', function() {
 
 </head>
 <body>
+<?php require 'header.php'; ?>
 <div class="container2">
   
   <img id="colorImage" src="<?php echo $selectedOfferColor['image']; ?>" style="float: left; width: 960px; height: 520px;">
@@ -134,7 +138,7 @@ window.addEventListener('beforeunload', function() {
             <?php foreach ($selectedOfferColors as $color) { ?>
                 <div class="color-option">
                     <input type="radio" id="<?php echo $color['color']; ?>" name="color" value="<?php echo $color['color']; ?>">
-                    <label for="<?php echo $color['color']; ?>"><?php echo ucfirst($color['color']) . ' - $' . $color['color_price']; ?></label>
+                    <label for="<?php echo $color['color']; ?>"><?php echo ucfirst($color['color']) . ' - €' . $color['color_price']; ?></label>
                 </div>
             <?php } ?>
           </div>
@@ -149,7 +153,7 @@ window.addEventListener('beforeunload', function() {
                 <?php
             } else {
                 ?>
-                <input type="button" value="Get an offer" class="btn" onclick="on()"></input>
+                <input type="button" value="Get an offer" class="btn btn-primary" onclick="on()"></input>
                 <?php
             }
           } else {
@@ -162,7 +166,7 @@ window.addEventListener('beforeunload', function() {
 
         <?php if(isset($_SESSION['roleID'])): ?>
           <?php if ($_SESSION['roleID'] == 1): ?>
-            <button id="settingsButton" class="btn" onclick="toggleSettings()">Settings</button>
+            <button id="settingsButton" class="btn btn-primary" onclick="toggleSettings()">Settings</button>
             <div id="settingsForm">
                       <!-- Форма для редактирование информации -->
                       <form method="post" action="edit_information.php" enctype="multipart/form-data">
@@ -181,7 +185,7 @@ window.addEventListener('beforeunload', function() {
                           </label>
 
                           <input type="hidden" name="offerID" value="<?php echo $selectedOffer['offerID']; ?>">
-                          <button class="btn" type="submit">Save changes</button>
+                          <button class="btn btn-primary" type="submit">Save changes</button>
                       </form>
 
                       <!-- Форма для добавления новых цветов -->
@@ -199,7 +203,7 @@ window.addEventListener('beforeunload', function() {
                           </label>
 
                           <input type="hidden" name="offerID" value="<?php echo $selectedOffer['offerID']; ?>">
-                          <button class="btn" type="submit">Add</button>
+                          <button class="btn btn-primary" type="submit">Add</button>
                       </form>
                       <div class="color-options-container">
                         <!-- Ссылки для удаления цветов -->
@@ -224,9 +228,9 @@ window.addEventListener('beforeunload', function() {
   </div>
 </div>
 
-  <div id="overlay" onclick="off()">
+  <div id="overlay_order" onclick="off()">
     <div id="text" class="form-container">
-      <form method="post" action="offerPage.php">
+      <form method="post">
         
         <input type="hidden" name="colorID" value="<?php echo $selectedOfferColor['colorID']; ?>">
         <input type="hidden" name="offerID" value="<?php echo $selectedOffer['offerID'] ?>">
@@ -250,16 +254,13 @@ window.addEventListener('beforeunload', function() {
           <label></label>
           <p>I have read and agree to the <a href='infoPage.php'>terms and conditions</a>.</p>
         </div>
-        <br>
-        <input type="submit" name="submit_order" value="Submit" class="btn btn-primary">
+        <input type="button" value="Submit" class="btn btn-primary" onclick="showConfirmationModal()">
 
         <input type="button" value="Cancel" onclick="off(event)" id="cancelButton" class="btn btn-primary">
-
+        <?php include 'includes/confirm_order.php'; ?>
       </form>
     </div>
   </div>
-<div class="hidden-container"></div>
-
 <script>
   // JavaScript код для убирания атрибута readonly
 document.addEventListener('input', function (e) {

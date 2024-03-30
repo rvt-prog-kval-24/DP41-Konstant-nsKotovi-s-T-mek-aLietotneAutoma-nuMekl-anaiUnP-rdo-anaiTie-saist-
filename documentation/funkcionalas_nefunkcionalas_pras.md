@@ -59,7 +59,7 @@
 
 * Sistēmas reģistrācijas formas skice (skat.2.att.)
 
-![DP4-1 Konstantīns Kotovičs Sistēmas reģistrācijas formas skice](https://media.discordapp.net/attachments/968604972730155058/1223707728372043796/2.att._Sistemas_registracijas_formas_skice.png?ex=661ad5a1&is=660860a1&hm=daada4aeb6bd9b3dc0e1cf555809482f2d9f4abef19b977861229af1c99c47b3&=&format=webp&quality=lossless&width=755&height=905)
+![DP4-1 Konstantīns Kotovičs Sistēmas reģistrācijas formas skice](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/2.att.%20Sistēmas%20reģistrācijas%20formas%20skice.png)
 
 2.att. Sistēmas reģistrācijas formas skice
 

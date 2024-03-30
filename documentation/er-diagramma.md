@@ -17,6 +17,6 @@ Datu bāzes projektēšanā datu kopu un saišu starp tām attēlošanai tika li
 
 * “Ziņojums” – “Ziņojuma tēma” klases apakšklase, tabula, kurā glabājās paziņojumu saturs, ko saņem lietotāji. Tā atribūtu kopa ietver ziņojuma tekstu, laiku un izlasīšanas statusu. Tabula “Ziņojums” ir saistīta ar tabulu “Ziņojuma tēma”. Katrs paziņojums pieder vienai no tēmām, tāpēc vienā tēmā var būt vairāki paziņojumi.
 
-![DP4-1 Konstantīns Kotovičs Entity relationship modelis](https://media.discordapp.net/attachments/968604972730155058/1223697659697823854/4._att._Entity_relationship_modelis.png?ex=661acc41&is=66085741&hm=74994bd81b0f6e8cb3bec549b3421d18097e75ab88f45a49ad238e6962d2f667&=&format=webp&quality=lossless&width=643&height=905)
+![DP4-1 Konstantīns Kotovičs Entity relationship modelis](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/4.%20att.%20Entity%20relationship%20modelis.png)
 
 4. att. Entity relationship modelis

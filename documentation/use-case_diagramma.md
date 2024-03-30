@@ -1,7 +1,7 @@
 #  USE CASE diagramma
 
 Paredzēts, ka sistēmu lietos trīs lietotāju klases: viesis, lietotājs un apkalpojošs personāls (skat. 1. att.).
-![DP4-1 Konstantīns Kotovičs Use Case diagramma](https://media.discordapp.net/attachments/968604972730155058/1223716566311506021/1._att._Lietojumgadijuma_diagramma.png?ex=661adddc&is=660868dc&hm=8eba804f81545a0659f9372d88f4fd554d309b62e28013b7422b14c5a5b78c88&=&format=webp&quality=lossless&width=1139&height=905)
+![DP4-1 Konstantīns Kotovičs Use Case diagramma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/use-case_diagramma.md)
 1. att. Lietojumgadījuma diagramma
 
 Use-case diagrammas tiek izmantotas datu bāzu projektēšanā, lai identificētu sistēmas funkcijas, to aktorus un to mijiedarbību. 

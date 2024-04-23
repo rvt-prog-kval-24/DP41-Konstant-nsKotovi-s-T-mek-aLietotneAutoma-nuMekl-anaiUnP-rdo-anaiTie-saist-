@@ -153,6 +153,9 @@ if (isset($_POST['submit_order'])) {
                             <label for="yearOfManufacture">Year of Manufacture:</label>
                             <input type="text" id="yearOfManufacture" name="yearOfManufacture" value="<?php echo $selectedOfferInfo['yearOfManufacture'] ?>"><br><br>
 
+                            <label for="yearOfManufacture">Year of Manufacture:</label>
+                            <input type="text" id="yearOfManufacture" name="yearOfManufacture" value="<?php echo $selectedOfferInfo['transmission_type'] ?>"><br><br>
+
                             <!-- поле для загрузки изображения -->                        
                             <label class="custom-file-upload">
                               <span class="custom-file-upload-text">Choose File</span>

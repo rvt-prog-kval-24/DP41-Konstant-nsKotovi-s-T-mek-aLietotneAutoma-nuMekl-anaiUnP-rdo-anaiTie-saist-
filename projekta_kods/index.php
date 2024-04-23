@@ -13,25 +13,28 @@ if (isset($_GET['searchBtn'])) {
     $search = $_GET['search'];
     $selectedBrand = $_GET['brand'] ?? '';
     $selectedModel = $_GET['model'] ?? '';
-    $selectedTransmission = $_GET['selectedTransmission'] ?? '';
+    $selectedTransmission = $_GET['transmission'] ?? '';
     $selectedType = $_GET['type'] ?? '';
+    $selectedYear = $_GET['year'] ?? '';
     $selectedColor = $_GET['color'] ?? '';
     $currentMinPrice = $_GET['minPrice'] ?? 0;
     $currentMaxPrice = $_GET['maxPrice'] ?? '';
 
-    $offers = $searchOption->searchOffers($search, $selectedBrand, $selectedModel, $selectedType, $selectedColor, $currentMinPrice, $currentMaxPrice);
+    $offers = $searchOption->searchOffers($search, $selectedBrand, $selectedModel, $selectedType, $selectedYear, $selectedColor, $selectedTransmission, $currentMinPrice, $currentMaxPrice);
 }
 
-$selectedTransmission = $_GET['selectedTransmission'] ?? '';
 $selectedType = $_GET['type'] ?? '';
 $selectedBrand = $_GET['brand'] ?? '';
 $selectedColor = $_GET['color'] ?? '';
+$selectedTransmission = $_GET['transmission'] ?? '';
 
 require_once 'includes/car_body_types.php';
 require_once 'includes/car_colors.php';
 require_once 'includes/car_brands.php';
 require_once 'includes/car_models.php';
+require_once 'includes/transmissions_types.php';
 
+$selectedYear = $_GET['year'] ?? '';
 $currentMinPrice = $_GET['minPrice'] ?? '';
 $currentMaxPrice = $_GET['maxPrice'] ?? '';
 
@@ -83,34 +86,34 @@ $currentMaxPrice = $_GET['maxPrice'] ?? '';
         </div>
 
         <div class="filters">
-          <!-- Контейнер для цены -->
-          <div class="price-container">
-              <label for="minPrice"></label>
-              <input type="text" id="minPrice" name="minPrice" placeholder="0 €" value="<?php echo $currentMinPrice ?>" style="width: 70px;">
+            <!-- Контейнер для цены -->
+            <div class="price-container">
+                <label for="minPrice"></label>
+                <input type="text" id="minPrice" name="minPrice" placeholder="0 €" value="<?php echo $currentMinPrice ?>" style="width: 70px;">
 
-              <label for="maxPrice"></label>
-              <input type="text" id="maxPrice" name="maxPrice" placeholder="- €" value="<?php echo $currentMaxPrice ?>" style="width: 70px; margin-left:50%;">
-          </div>
+                <label for="maxPrice"></label>
+                <input type="text" id="maxPrice" name="maxPrice" placeholder="- €" value="<?php echo $currentMaxPrice ?>" style="width: 70px; margin-left:50%;">
+            </div>
 
-          <div class="form-group">
-              <label for="brand"><strong>Brand:</strong></label>
-              <select name="brand" class="form-control" id="brand">
-                  <option value="">All Brands</option>
-                  <?php foreach ($carBrands as $brand) { ?>
-                      <option value="<?php echo $brand ?>" <?php echo $brand == $selectedBrand ? 'selected' : '' ?>>
-                          <?php echo $brand ?>
-                      </option>
-                  <?php } print_r($_GET) ?>
-              </select>
-          </div>
+            <div class="form-group">
+                <label for="brand"><strong>Brand:</strong></label>
+                <select name="brand" class="form-control" id="brand">
+                    <option value="">All Brands</option>
+                    <?php foreach ($carBrands as $brand) { ?>
+                        <option value="<?php echo $brand ?>" <?php echo $brand == $selectedBrand ? 'selected' : '' ?>>
+                            <?php echo $brand ?>
+                        </option>
+                    <?php } print_r($_GET) ?>
+                </select>
+            </div>
 
-          <div class="form-group" id="model-group">
-            <label for="model"><strong>Model:</strong></label>
-            <select name="model" class="form-control" id="model" disabled>
-                <option value="">Select Brand First</option>
-                <!-- Опции для моделей будут добавлены динамически с помощью JavaScript -->
-            </select>
-          </div>
+            <div class="form-group" id="model-group">
+                <label for="model"><strong>Model:</strong></label>
+                <select name="model" class="form-control" id="model" disabled>
+                    <option value="">Select Brand First</option>
+                    <!-- Опции для моделей будут добавлены динамически с помощью JavaScript -->
+                </select>
+            </div>
 
 <script>
     // Ассоциативный массив с моделями для каждой марки автомобиля
@@ -191,31 +194,61 @@ $currentMaxPrice = $_GET['maxPrice'] ?? '';
 
 </script>
 
-          <div class="form-group">
-            <label for="color"><strong>Color:</strong></label>
-            <select name="color" class="form-control" id="color">
-                <option value="">All Colors</option>
-                <?php foreach ($carColors as $color) { ?>
-                    <option value="<?php echo $color ?>" <?php echo $color == $selectedColor ? 'selected' : '' ?>>
-                        <?php echo $color ?>
-                    </option>
-                <?php } print_r($_GET) ?>
-            </select>
-          </div>
+            <div class="form-group">
+                <label for="year"><strong>Manufacturing Year:</strong></label>
+                <select name="year" class="form-control" id="year">
+                    <option value="">All Years</option>
+                    <?php 
+                    // Год начала
+                    $startYear = 1990;
+                    // текущий год
+                    $endYear = date("Y");
+                    
+                    for($year = $endYear; $year >= $startYear; $year--) { ?>
+                        <option value="<?php echo $year ?>" <?php echo $year == $selectedYear ? 'selected' : '' ?>>
+                            <?php echo $year ?>
+                        </option>
+                    <?php } ?>
+                </select>
+            </div>
 
-          <div class="form-group">
-            <label for="type"><strong>Body type:</strong></label>
-            <select name="type" class="form-control" id="type">
-                <option value="">All types</option>
-                <?php foreach ($carBodyTypes as $type) { ?>
-                    <option value="<?php echo $type ?>" <?php echo $type == $selectedType ? 'selected' : '' ?>>
-                        <?php echo $type ?>
-                    </option>
-                <?php } print_r($_GET) ?>
-            </select>
-          </div>
+            <div class="form-group">
+                <label for="color"><strong>Color:</strong></label>
+                <select name="color" class="form-control" id="color">
+                    <option value="">All Colors</option>
+                    <?php foreach ($carColors as $color) { ?>
+                        <option value="<?php echo $color ?>" <?php echo $color == $selectedColor ? 'selected' : '' ?>>
+                            <?php echo $color ?>
+                        </option>
+                    <?php } print_r($_GET) ?>
+                </select>
+            </div>
 
-      </div>
+            <div class="form-group">
+                <label for="type"><strong>Body type:</strong></label>
+                <select name="type" class="form-control" id="type">
+                    <option value="">All types</option>
+                    <?php foreach ($carBodyTypes as $type) { ?>
+                        <option value="<?php echo $type ?>" <?php echo $type == $selectedType ? 'selected' : '' ?>>
+                            <?php echo $type ?>
+                        </option>
+                    <?php } print_r($_GET) ?>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="transmission"><strong>Transmissions:</strong></label>
+                <select name="transmission" class="form-control" id="transmission">
+                    <option value="">All transmissions</option>
+                    <?php foreach ($transmissions as $transmission) { ?>
+                        <option value="<?php echo $transmission ?>" <?php echo $transmission == $selectedTransmission ? 'selected' : '' ?>>
+                            <?php echo $transmission ?>
+                        </option>
+                    <?php } print_r($_GET) ?>
+                </select>
+            </div>
+
+        </div>
 
     </form>
 
@@ -230,12 +263,12 @@ $currentMaxPrice = $_GET['maxPrice'] ?? '';
             <div class="card-wrapper">
                 <?php foreach ($offers as $selectedOffer) { ?>
                     <div class="card">
-                        <img src="<?php echo $selectedOffer['image']; ?>" alt="Car Image">
+                        <img src="<?php echo $selectedOffer['image']; ?>" alt="Car Image" class="car_image">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $selectedOffer['manufacturer'] . ' ' . $selectedOffer['type']; ?></h5>
-                            <p class="card-text">Year: <?php echo date('Y', strtotime($selectedOffer['yearOfManufacture'])); ?></p>
-                            <p class="card-text">Price: $<?php echo ($selectedOffer['price']+$selectedOffer['color_price']); ?></p>
-                            <a href="offerPage.php?offerID=<?php echo $selectedOffer['offerID']; ?>&color=<?php echo $selectedOffer['color']; ?>"
+                            <p class="card-text">Year: <?php echo $selectedOffer['yearOfManufacture']; ?></p>
+                            <p class="card-text">Price: $<?php echo ($selectedOffer['price']+$selectedOffer['color_price']+$selectedOffer['transmission_price']); ?></p>
+                            <a href="offerPage.php?offerID=<?php echo $selectedOffer['offerID']; ?>&detailsID=<?php echo $selectedOffer['detailsID']; ?>"
                                 class="btn btn-primary">View</a>
                         </div>
                     </div>

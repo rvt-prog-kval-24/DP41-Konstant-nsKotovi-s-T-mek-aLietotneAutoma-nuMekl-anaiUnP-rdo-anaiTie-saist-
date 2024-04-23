@@ -32,7 +32,7 @@ async function initializeNotificationIcon() {
         });
 
         if (response.status === 'unread') {
-            // Уведомления не прочитаны, изменяем иконку на "bell-active.png"
+            // Уведомления не прочитаны, меняем иконку на "bell-active.png"
             $('#notification-bell').attr('src', 'img/icon/bell-active.png');
         } else {
             // Уведомления прочитаны, иконка остается "bell.png"
@@ -101,13 +101,13 @@ function editNotificationIcon() {
             <li>
               <div class="dropdown text-end">
                 <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="<?php echo $avatarURL; ?>" alt="Avatar" width="40" height="40" class="rounded-circle">
+                  <img src="<?php echo $avatarURL; ?>" alt="Avatar" width="40" height="40" class="rounded-circle" style="object-fit: cover;">
                 </a>
                 <ul class="dropdown-menu text-small">
                   <li><a class="dropdown-item" href="#" onClick="RedToProfile()">Profile & Orders</a></li>
                   <?php if ($_SESSION['roleID'] == 1) { ?>
                     <li><a class="dropdown-item" href="#" onClick="RedToOrdersPage()">All orders</a></li>
-                    <li><a class="dropdown-item" href="#" onClick="RedToEditOffers()">Offers</a></li>
+                    <li><a class="dropdown-item" href="#" onClick="RedToEditOffers()">Add Offer</a></li>
                   <?php } ?>
                   <li><a class="dropdown-item" href="#" onClick="RedToForum()">Forum</a></li>
                   <li><a class="dropdown-item" href="#" onClick="RedToInfo()">Help & Information</a></li>

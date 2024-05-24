@@ -13,13 +13,11 @@ Datu bāze sastāv no 11 tabulām, kas satur sevī informāciju par lietotāju, 
 7.	Tabula "notifications" glabā datus par pašu ziņojumu un saturu.
 7.	Tabula "notification_topics" glabā datus par ziņojumu tēmām un kādas no tiem parādās lietotājam.
 
-# Datubāzes dokumentācija
-
-## Tabula “user”
-
 Tabula “user” ir saistīta ar tabulu “comments”, “order” un “notification_topics”.
 
-### Tabulas “user” struktūra
+Tabulas “user” struktūra
+
+1. tabula
 
 | Nr. | Nosaukums         | Tips     | Garums | Piezīme                                                       |
 |-----|-------------------|----------|--------|---------------------------------------------------------------|
@@ -33,11 +31,11 @@ Tabula “user” ir saistīta ar tabulu “comments”, “order” un “notif
 
 *Lietotājs ir klients vai apkalpojošais personāls (0 vai 1).
 
-## Tabula “comments”
-
 Tabula “comments” ir saistīta ar tabulu “user”.
 
-### Tabulas “comments” struktūra
+Tabulas “comments” struktūra
+
+2. tabula
 
 | Nr. | Nosaukums          | Tips     | Garums | Piezīme                                                      |
 |-----|--------------------|----------|--------|--------------------------------------------------------------|
@@ -49,11 +47,11 @@ Tabula “comments” ir saistīta ar tabulu “user”.
 
 * Saite uz vecāku komentāru ir lauks datubāzē, kas norāda uz komentāru, uz kuru konkrētais komentārs atbild.
 
-## Tabula “offers”
-
 Tabula “offers” ir saistīta ar tabulām “offersinfo” un “order”.
 
-### Tabulas “offers” struktūra
+Tabulas “offers” struktūra
+
+3. tabula
 
 | Nr. | Nosaukums   | Tips     | Garums | Piezīme                                      |
 |-----|-------------|----------|--------|----------------------------------------------|
@@ -61,11 +59,11 @@ Tabula “offers” ir saistīta ar tabulām “offersinfo” un “order”.
 | 2   | type        | varchar  | 20     | automašīnas modelis;                         |
 | 3   | manufacture | varchar  | 20     | automašīnas marka;                           |
 
-## Tabula “offersinfo”
-
 Tabula “offersinfo” ir saistīta ar tabulu “offers” un “specific_details”.
 
-### Tabulas “offersinfo” struktūra
+Tabulas “offersinfo” struktūra
+
+4. tabula
 
 | Nr. | Nosaukums           | Tips     | Garums | Piezīme                                                 |
 |-----|---------------------|----------|--------|---------------------------------------------------------|
@@ -76,11 +74,11 @@ Tabula “offersinfo” ir saistīta ar tabulu “offers” un “specific_detai
 | 5   | body_type           | varchar  | 20     | automašīnas virsbūves tips;                             |
 | 6   | offersID            | int      | 10     | ārēja atslēga, kas norāda uz piedāvājumu;               |
 
-## Tabula “specific_details”
-
 Tabula “specific_details” ir saistīta ar tabulām: “offersinfo”, “order”, "car_colors", “transmission”, “engine”.
 
-### Tabulas “specific_details” struktūra
+Tabulas “specific_details” struktūra
+
+5. tabula
 
 | Nr. | Nosaukums      | Tips       | Garums | Piezīme                                                         |
 |-----|----------------|------------|--------|-----------------------------------------------------------------|
@@ -92,11 +90,11 @@ Tabula “specific_details” ir saistīta ar tabulām: “offersinfo”, “ord
 | 6   | active_status  | int        | 10     | statuss, lai lietotājam netiktu rādīti piedāvājumi, kas ir atzīmēti kā neaktīvi; |
 | 7   | created_at     | timestamp  | -      | ārēja atslēga, kas norāda uz piedāvājumu;                       |
 
-## Tabula “engine”
-
 Tabula “engine” ir saistīta ar tabulu “specific_details”.
 
-### Tabulas “engine” struktūra
+Tabulas “engine” struktūra
+
+6. tabula
 
 | Nr. | Nosaukums      | Tips     | Garums | Piezīme                                                   |
 |-----|----------------|----------|--------|-----------------------------------------------------------|
@@ -104,11 +102,11 @@ Tabula “engine” ir saistīta ar tabulu “specific_details”.
 | 2   | engine_type    | varchar  | 50     | dzinēja tips, kas pieder konfigurācijai;                   |
 | 3   | engine_price   | float    | -      | dzinēja cena, kas pieder konfigurācijai;                   |
 
-## Tabula “transmission”
-
 Tabula “transmission” ir saistīta ar tabulu “specific_details”.
 
-### Tabulas “transmission” struktūra
+Tabulas “transmission” struktūra
+
+7. tabula
 
 | Nr. | Nosaukums         | Tips     | Garums | Piezīme                                                  |
 |-----|-------------------|----------|--------|----------------------------------------------------------|
@@ -116,11 +114,11 @@ Tabula “transmission” ir saistīta ar tabulu “specific_details”.
 | 2   | transmission_type | varchar  | 20     | transmisijas tips, kas pieder konfigurācijai;            |
 | 3   | transmission_price| float    | -      | transmisijas cena, kas pieder konfigurācijai;            |
 
-## Tabula “car_colors”
-
 Tabula “car_colors” ir saistīta ar tabulu “specific_details”.
 
-### Tabulas “car_colors” struktūra
+Tabulas “car_colors” struktūra
+
+8. tabula
 
 | Nr. | Nosaukums         | Tips     | Garums | Piezīme                                                  |
 |-----|-------------------|----------|--------|----------------------------------------------------------|
@@ -129,11 +127,11 @@ Tabula “car_colors” ir saistīta ar tabulu “specific_details”.
 | 3   | image             | blob     | -      | piedavājuma attēls, kas pieder konfigurācijai;            |
 | 4   | color_price       | float    | -      | krāsas cena, kas pieder konfigurācijai;                   |
 
-## Tabula “order”
-
 Tabula “order” ir saistīta ar tabulu “offers”, “user” un “specific_details”.
 
-### Tabulas “order” struktūra
+Tabulas “order” struktūra
+
+9. tabula
 
 | Nr. | Nosaukums         | Tips     | Garums | Piezīme                                                     |
 |-----|-------------------|----------|--------|-------------------------------------------------------------|
@@ -147,11 +145,11 @@ Tabula “order” ir saistīta ar tabulu “offers”, “user” un “specifi
 | 8   | orderUserID       | int      | 10     | ārēja atslēga, kas norāda uz lietotāju;                      |
 | 9   | orderDetailsID    | int      | 10     | ārēja atslēga, kas norāda uz izvēlēto konfigurāciju;         |
 
-## Tabula “notifications”
-
 Tabula “notifications” ir saistīta ar tabulu “notification_topics”.
 
-### Tabulas “notifications” struktūra
+Tabulas “notifications” struktūra
+
+10. tabula
 
 | Nr. | Nosaukums         | Tips     | Garums | Piezīme                                                     |
 |-----|-------------------|----------|--------|-------------------------------------------------------------|
@@ -163,11 +161,11 @@ Tabula “notifications” ir saistīta ar tabulu “notification_topics”.
 
 *Izlasīšanas statuss mainās, kad lietotājs atver logu ar ziņojumiem (“NULL” vai 1).
 
-## Tabula “notification_topics”
-
 Tabula “notification_topics” ir saistīta ar tabulu “user”.
 
-### Tabulas “notification_topics” struktūra
+Tabulas “notification_topics” struktūra
+
+11. tabula
 
 | Nr. | Nosaukums         | Tips     | Garums | Piezīme                                                   |
 |-----|-------------------|----------|--------|-----------------------------------------------------------|
@@ -180,6 +178,6 @@ Tabula “notification_topics” ir saistīta ar tabulu “user”.
 
 Fiziskajā līmenī dati ir organizēti un glabājas, izmantojot tabulu saišu shēmu. Šī struktūra nodrošina efektīvu datu glabāšanu un atgriešanu, nodrošinot labu veiktspēju un optimizētu datu piekļuvi.
 
-![DP4-1 Konstantīns Kotovičs Datubāzes fiziskās struktūras shēma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/4.%20att.%20Entity%20relationship%20modelis.png)
+![DP4-1 Konstantīns Kotovičs Datubāzes fiziskās struktūras shēma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/16.%20att.%20Datubāzes%20fiziskās%20struktūras%20shēma.png)
 
 11. att. Datubāzes fiziskās struktūras shēma

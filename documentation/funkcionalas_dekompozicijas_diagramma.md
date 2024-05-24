@@ -4,6 +4,7 @@
 
 Sistēmu (sk. 5. attēlu) veido trīš apakšsistēmas: apkalpojošo personālu modulis, lietotāja modulis, sistēmas modulis.
 ![DP4-1 Konstantīns Kotovičs FD diagramma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/5.%20att.%20FD%20diagramma.png)
+
 5. att. FD diagramma
 
 -   **Lietotāju modulis.** Nereģistrētam lietotājam būs iespēja veikt šādas funkcijas: apskatīt automašīnu klāstu, meklēt automašīnu pēc nosaukuma, izgatavotāja, minimālās un maksimālās cenas, izdošanas gada, krāsas, virsbūves tipa, transmisijas. Būs iespējams arī pierēğistrēties, ja viņš piereğistrēsies vai ieies kontā, tad tam parādīsies vairāk iespēju un viņš būs "klients" vai “apkalpojošs personāls” (atkarībā no tā, kādu paroli un lietotājvārdu ievadīs). Reģistrēts lietotājs varēs veikt šādas funkcijas: atstāt komentāru vai atbildēt uz citiem un dzēst to, aizpildīt formu, lai veiktu pasūtījumu, mainīt profila attēlu un paroli, apskatīt savus datus un informāciju par saviem pasūtījumiem, ka arī izvadīt excel tabulā, ir iespēja izvēlēties par kadām tēmām saņemt ziņojumus un kādus paslēpt, kā arī dzēst.

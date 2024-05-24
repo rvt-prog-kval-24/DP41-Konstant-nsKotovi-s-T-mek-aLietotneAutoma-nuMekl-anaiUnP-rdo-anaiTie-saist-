@@ -13,10 +13,6 @@ Datu bāze sastāv no 11 tabulām, kas satur sevī informāciju par lietotāju, 
 7.	Tabula "notifications" glabā datus par pašu ziņojumu un saturu.
 7.	Tabula "notification_topics" glabā datus par ziņojumu tēmām un kādas no tiem parādās lietotājam.
 
-# Datubāzes dokumentācija
-
-## Tabula “user”
-
 Tabula “user” ir saistīta ar tabulu “comments”, “order” un “notification_topics”.
 
 ### Tabulas “user” struktūra
@@ -33,8 +29,6 @@ Tabula “user” ir saistīta ar tabulu “comments”, “order” un “notif
 
 *Lietotājs ir klients vai apkalpojošais personāls (0 vai 1).
 
-## Tabula “comments”
-
 Tabula “comments” ir saistīta ar tabulu “user”.
 
 ### Tabulas “comments” struktūra
@@ -49,8 +43,6 @@ Tabula “comments” ir saistīta ar tabulu “user”.
 
 * Saite uz vecāku komentāru ir lauks datubāzē, kas norāda uz komentāru, uz kuru konkrētais komentārs atbild.
 
-## Tabula “offers”
-
 Tabula “offers” ir saistīta ar tabulām “offersinfo” un “order”.
 
 ### Tabulas “offers” struktūra
@@ -60,8 +52,6 @@ Tabula “offers” ir saistīta ar tabulām “offersinfo” un “order”.
 | 1   | offerID     | int      | 10     | piedāvājuma identifikatora kods, primārā atslēga; |
 | 2   | type        | varchar  | 20     | automašīnas modelis;                         |
 | 3   | manufacture | varchar  | 20     | automašīnas marka;                           |
-
-## Tabula “offersinfo”
 
 Tabula “offersinfo” ir saistīta ar tabulu “offers” un “specific_details”.
 
@@ -75,8 +65,6 @@ Tabula “offersinfo” ir saistīta ar tabulu “offers” un “specific_detai
 | 4   | weight              | float    | -      | automašīnas svars;                                      |
 | 5   | body_type           | varchar  | 20     | automašīnas virsbūves tips;                             |
 | 6   | offersID            | int      | 10     | ārēja atslēga, kas norāda uz piedāvājumu;               |
-
-## Tabula “specific_details”
 
 Tabula “specific_details” ir saistīta ar tabulām: “offersinfo”, “order”, "car_colors", “transmission”, “engine”.
 
@@ -92,8 +80,6 @@ Tabula “specific_details” ir saistīta ar tabulām: “offersinfo”, “ord
 | 6   | active_status  | int        | 10     | statuss, lai lietotājam netiktu rādīti piedāvājumi, kas ir atzīmēti kā neaktīvi; |
 | 7   | created_at     | timestamp  | -      | ārēja atslēga, kas norāda uz piedāvājumu;                       |
 
-## Tabula “engine”
-
 Tabula “engine” ir saistīta ar tabulu “specific_details”.
 
 ### Tabulas “engine” struktūra
@@ -103,8 +89,6 @@ Tabula “engine” ir saistīta ar tabulu “specific_details”.
 | 1   | engineID       | int      | 10     | dzinēja identifikatora kods, primārā atslēga;              |
 | 2   | engine_type    | varchar  | 50     | dzinēja tips, kas pieder konfigurācijai;                   |
 | 3   | engine_price   | float    | -      | dzinēja cena, kas pieder konfigurācijai;                   |
-
-## Tabula “transmission”
 
 Tabula “transmission” ir saistīta ar tabulu “specific_details”.
 
@@ -116,8 +100,6 @@ Tabula “transmission” ir saistīta ar tabulu “specific_details”.
 | 2   | transmission_type | varchar  | 20     | transmisijas tips, kas pieder konfigurācijai;            |
 | 3   | transmission_price| float    | -      | transmisijas cena, kas pieder konfigurācijai;            |
 
-## Tabula “car_colors”
-
 Tabula “car_colors” ir saistīta ar tabulu “specific_details”.
 
 ### Tabulas “car_colors” struktūra
@@ -128,8 +110,6 @@ Tabula “car_colors” ir saistīta ar tabulu “specific_details”.
 | 2   | color             | varchar  | 50     | krāsas nosaukums, kas pieder konfigurācijai;              |
 | 3   | image             | blob     | -      | piedavājuma attēls, kas pieder konfigurācijai;            |
 | 4   | color_price       | float    | -      | krāsas cena, kas pieder konfigurācijai;                   |
-
-## Tabula “order”
 
 Tabula “order” ir saistīta ar tabulu “offers”, “user” un “specific_details”.
 
@@ -147,8 +127,6 @@ Tabula “order” ir saistīta ar tabulu “offers”, “user” un “specifi
 | 8   | orderUserID       | int      | 10     | ārēja atslēga, kas norāda uz lietotāju;                      |
 | 9   | orderDetailsID    | int      | 10     | ārēja atslēga, kas norāda uz izvēlēto konfigurāciju;         |
 
-## Tabula “notifications”
-
 Tabula “notifications” ir saistīta ar tabulu “notification_topics”.
 
 ### Tabulas “notifications” struktūra
@@ -162,8 +140,6 @@ Tabula “notifications” ir saistīta ar tabulu “notification_topics”.
 | 5   | topic_id          | int      | 10     | ārēja atslēga, kas norāda uz ziņojuma tēmu;                  |
 
 *Izlasīšanas statuss mainās, kad lietotājs atver logu ar ziņojumiem (“NULL” vai 1).
-
-## Tabula “notification_topics”
 
 Tabula “notification_topics” ir saistīta ar tabulu “user”.
 

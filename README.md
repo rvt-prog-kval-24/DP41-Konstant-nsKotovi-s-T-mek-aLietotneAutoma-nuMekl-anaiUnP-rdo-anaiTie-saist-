@@ -44,4 +44,4 @@ Ir plānotas vairākas funkcijas:
 
 6. [PhpSpreadsheet](https://github.com/PHPOffice/PhpSpreadsheet) - šī bibliotēka tiek izmantota, lai izveidotu Excel failus, izmantojot PHP. To izmanto, lai ģenerētu Excel tabulas ar datiem no mūsu vietnes un piedāvātu lietotājiem lejupielādēt šos failus ar informāciju par pasūtījumiem.
 
-7. [Sweetalert]([https://github.com/PHPOffice/PhpSpreadsheet](https://sweetalert2.github.io)) - tika ņemta pirmā versija: "https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js", bet aktuālā saite ir ar otro versiju. Tika ņemts prieks apstiprinājuma vai kļūdas parādīšanas logam.
+7. [Sweetalert](https://sweetalert2.github.io) - tika ņemta pirmā versija: "https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js", bet aktuālā saite ir ar otro versiju. Tika ņemts prieks apstiprinājuma vai kļūdas parādīšanas logam.

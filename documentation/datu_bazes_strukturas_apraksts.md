@@ -15,7 +15,8 @@ Datu bāze sastāv no 11 tabulām, kas satur sevī informāciju par lietotāju, 
 
 Tabula “user” ir saistīta ar tabulu “comments”, “order” un “notification_topics”.
 
-### Tabulas “user” struktūra
+Tabulas “user” struktūra
+1. tabula
 
 | Nr. | Nosaukums         | Tips     | Garums | Piezīme                                                       |
 |-----|-------------------|----------|--------|---------------------------------------------------------------|
@@ -31,7 +32,8 @@ Tabula “user” ir saistīta ar tabulu “comments”, “order” un “notif
 
 Tabula “comments” ir saistīta ar tabulu “user”.
 
-### Tabulas “comments” struktūra
+Tabulas “comments” struktūra
+2. tabula
 
 | Nr. | Nosaukums          | Tips     | Garums | Piezīme                                                      |
 |-----|--------------------|----------|--------|--------------------------------------------------------------|
@@ -45,7 +47,8 @@ Tabula “comments” ir saistīta ar tabulu “user”.
 
 Tabula “offers” ir saistīta ar tabulām “offersinfo” un “order”.
 
-### Tabulas “offers” struktūra
+Tabulas “offers” struktūra
+3. tabula
 
 | Nr. | Nosaukums   | Tips     | Garums | Piezīme                                      |
 |-----|-------------|----------|--------|----------------------------------------------|
@@ -55,7 +58,8 @@ Tabula “offers” ir saistīta ar tabulām “offersinfo” un “order”.
 
 Tabula “offersinfo” ir saistīta ar tabulu “offers” un “specific_details”.
 
-### Tabulas “offersinfo” struktūra
+Tabulas “offersinfo” struktūra
+4. tabula
 
 | Nr. | Nosaukums           | Tips     | Garums | Piezīme                                                 |
 |-----|---------------------|----------|--------|---------------------------------------------------------|
@@ -68,7 +72,8 @@ Tabula “offersinfo” ir saistīta ar tabulu “offers” un “specific_detai
 
 Tabula “specific_details” ir saistīta ar tabulām: “offersinfo”, “order”, "car_colors", “transmission”, “engine”.
 
-### Tabulas “specific_details” struktūra
+Tabulas “specific_details” struktūra
+5. tabula
 
 | Nr. | Nosaukums      | Tips       | Garums | Piezīme                                                         |
 |-----|----------------|------------|--------|-----------------------------------------------------------------|
@@ -82,7 +87,8 @@ Tabula “specific_details” ir saistīta ar tabulām: “offersinfo”, “ord
 
 Tabula “engine” ir saistīta ar tabulu “specific_details”.
 
-### Tabulas “engine” struktūra
+Tabulas “engine” struktūra
+6. tabula
 
 | Nr. | Nosaukums      | Tips     | Garums | Piezīme                                                   |
 |-----|----------------|----------|--------|-----------------------------------------------------------|
@@ -92,7 +98,8 @@ Tabula “engine” ir saistīta ar tabulu “specific_details”.
 
 Tabula “transmission” ir saistīta ar tabulu “specific_details”.
 
-### Tabulas “transmission” struktūra
+Tabulas “transmission” struktūra
+7. tabula
 
 | Nr. | Nosaukums         | Tips     | Garums | Piezīme                                                  |
 |-----|-------------------|----------|--------|----------------------------------------------------------|
@@ -102,7 +109,8 @@ Tabula “transmission” ir saistīta ar tabulu “specific_details”.
 
 Tabula “car_colors” ir saistīta ar tabulu “specific_details”.
 
-### Tabulas “car_colors” struktūra
+Tabulas “car_colors” struktūra
+8. tabula
 
 | Nr. | Nosaukums         | Tips     | Garums | Piezīme                                                  |
 |-----|-------------------|----------|--------|----------------------------------------------------------|
@@ -113,7 +121,8 @@ Tabula “car_colors” ir saistīta ar tabulu “specific_details”.
 
 Tabula “order” ir saistīta ar tabulu “offers”, “user” un “specific_details”.
 
-### Tabulas “order” struktūra
+Tabulas “order” struktūra
+9. tabula
 
 | Nr. | Nosaukums         | Tips     | Garums | Piezīme                                                     |
 |-----|-------------------|----------|--------|-------------------------------------------------------------|
@@ -129,7 +138,8 @@ Tabula “order” ir saistīta ar tabulu “offers”, “user” un “specifi
 
 Tabula “notifications” ir saistīta ar tabulu “notification_topics”.
 
-### Tabulas “notifications” struktūra
+Tabulas “notifications” struktūra
+10. tabula
 
 | Nr. | Nosaukums         | Tips     | Garums | Piezīme                                                     |
 |-----|-------------------|----------|--------|-------------------------------------------------------------|
@@ -143,7 +153,8 @@ Tabula “notifications” ir saistīta ar tabulu “notification_topics”.
 
 Tabula “notification_topics” ir saistīta ar tabulu “user”.
 
-### Tabulas “notification_topics” struktūra
+Tabulas “notification_topics” struktūra
+11. tabula
 
 | Nr. | Nosaukums         | Tips     | Garums | Piezīme                                                   |
 |-----|-------------------|----------|--------|-----------------------------------------------------------|

@@ -15,36 +15,55 @@
 3. Meklēšanas funkcija automašīnu klāstā:
     - Ja lietotājs ievada marku vai modeli, vai visu kopā, sistēmai ir jāparāda visi attiecīgie piedāvājumi.
     - Ja nav atrasti piedāvājumi, izvadīsies atbilstošs teksts.
-    - Sistēmai ir jānodrošina meklēšanu pēc filtru saraksta, lai lietotāji varētu viegli atlasīt vajadzīgos kritērijus, tādus kā cenu intervāls, krāsa, ātrumkārba, marka, modelis, virbūves tips.
+    - Sistēmai ir jānodrošina meklēšanu pēc filtru saraksta, lai lietotāji varētu viegli atlasīt vajadzīgos kritērijus, tādus kā cenu intervāls, krāsa, ātrumkārba, marka, modelis, virbūves tips, izdošanas gads.
     - Sistēmai ir jānodrošina meklēšana pēc kritērijiem un atslēgvārdiem kopā.
 4. Forma automašīnas pirkšanai ar visiem nepieciešamajiem laukiem:
     - Obligātu lauku pārbaude, telefona numurs, vārds un uzvārds, un arī ka lietotājs piekrīt nosacījumiem.
-    - Sistēmai ir jāparbauda vai lietotājs ievada tieši ciparus laukā priekš telefona numura un pēc nostātījuma tās sākās no “+371”.
-    - Sistēmai jāsaglabā informāciju par izvēlēto krāsas variantu.
-    - Jaizvada logu ar visu informāciju par pasūtijumu priekš apstiprināšanai.
-5. Apkalpojoša personāla funkcijas:
-    - Piedāvājumu pievienošana, dzēšana iun informācijas rediģēšana.
-    - Klienta un pasūtījumu informācijas apskate un izpildes statusa mainīšana.
-    - Jauno automašīnu krāsu pievienošana vai dzēšana.
-6. Komentāru atstāšana:
+    - Sistēmai ir jāparbauda vai lietotājs ievada tieši ciparus laukā priekš telefona numura.
+    - Sistēmai jāsaglabā informāciju par izvēlēto automašīnas komplektāciju.
+    - Jaizvada logu ar visu informāciju par pasūtijumu un saziņas informāciju priekš apstiprināšanai.
+5. Piedāvājumu pievienošanas funkcija:
+    - Datu ivedīšana un obligātu lauku pārbaude.
+    - Pārbaude uz maksimālo simbolu skaitu.
+6. Komplektāciju pievienošana/dzēšana:
+    - Iespēja pie jau eksistējošā modeļa pievienot koplektācijas. Datu ivedīšana.
+    - Obligātu lauku pārbaude.
+    - Rakstzīmju ierobežojums.
+    - Ir iespēja dzēst izvēlēto komplektāciju.
+7. Piedāvājumu paslēpšana/deaktivēšana:
+    - Iespēja mainīt statusu izvēlējoties atbilstošo komplektāciju.
+    - Iespēja paslēpt piedāvājumu, lai lietotājam netiktu rādīti piedāvājumi, kas ir atzīmēti kā neaktīvi.
+8. Pasūtījumu apskate un apstrāde.
+    - Apkalpojošajam personālam jābūt iespējai apsktīt visus lietotāju pasūtījumus.
+    - Iespēja mainīt pasūtījuma izpildes statusu.
+    - Lietotājam iespēja apskatīt savus pasūtījumus.
+    - Katram autorizētam lietotājam jābūt iespējai izvadīt pasūtījumus excel tabulā.
+9. Komentāru atstāšana:
     - Obligātu lauku pārbaude un kļūdas paziņojumu izvadīšana.
-    - Lietotāju iespēja atstāt/dzēst savus komentārus, kā arī atbildēt uz citiem.
+    - Lietotāju iespēja atstāt savus komentārus.
+    - Iespēja atbildēt uz komentāriem.
     - Komentāru laukā jābūt pārbaude uz simbolu skaitu.
-    - Apkalpojošajam personālam jābūt iepējai dzēst jebkādu komentāriju.
-7. Personīgais lietotāja konts un to rediģēšana:
+10. Komentāru dzēšana:
+    - Lietotāju iespēja dzēst savus komentārus.
+    - Apkalpojošajam personālam jābūt iepējai dzēst jebkādu komentāru.
+11. Personīgais lietotāja konts un to rediģēšana:
     - Konta informācija un personalizācijas iespējas, konta attēla maiņa.
     - Lietotāja paroles rediģēšanas. Ja tagadējais parolis ir ievadīts nepareizi vai jauns parolis un atkārtoti ievadītais nesakritīs, tad izvadīs kļūdas.
     - Sistēmai ir jānodrošina visu pasūtījumu apskati priekš katra lietotāja un izvadi excel formātā.
-8. Iziešana no profila:
+12. Iziešana no profila:
     - Katram lietotājam jābūt iespēja iziet no lietotāja konta.
-9. Ziņojumu saņemšanas sistēma:
+13. Ziņojumu saņemšanas sistēma:
     - Sistēmai jānosūta paziņojums par veiksmīgu reģistrāciju.
     - Sistēmai jānosūta paziņojums par veiksmīgu pasūtīšanu.
-    - Sistēmai jānosūta paziņojums, ja uz lietotāja komentāriju atbildēja.
-    - Lietotājiem jābūt iespējai paslēpt ziņas par tēmām, kas viņu neinteresē.
+    - Sistēmai jānosūta paziņojums, ja uz lietotāja komentāru atbildēja.
+14. Ziņojumu paslēpšana pēc tēmatiem.
+    - Lietotājiem jābūt iespējai paslēpt ziņas par tēmām, kas viņu neinteresē ("Forums", "Pasūtījumi", "Profila izmaiņas").
+15. Ziņojuma dzēšana.
     - Lietotājam vajadzētu būt iespēja dzēst ziņojumus no sava konta pasta.
-10. Transportlīdzekļa krāsu variantu attēlošana:
-    - Visiem lietotājiem jābūt iespējai apskatīt automobiļa krāsu variantus, un sistēmai jāuzrāda attēls ar izvēlēto krāsu.
+    - Lietotājam vajadzētu būt iespēja dzēst ar vienu pogu visus ziņojumus no sava konta pasta.
+16. Transportlīdzekļa komplektāciju variantu attēlošana:
+    - Visiem lietotājiem jābūt iespējai apskatīt automobiļa komplektāciju variantus, un sistēmai jāuzrāda visas komplektācijas, kas ir saistītas ar izvēlēto modeli.
+    
 ## Nefunkcionālās prasības
 1. Veiktspēja: sistēmai jānodrošina atbilde lietotājam ne ilgāk kā 2 sekundes laikā un datu bāzes jautājumiem jābūt izpildītiem ne ilgāk kā 5 sekundēs.
 2. Drošība: lietotāja paroles jābūt saglabātām, izmantojot šifrēšanu. Piekļuve administratīvajām funkcijām jābūt tikai autorizētiem darbiniekiem.

@@ -202,12 +202,12 @@ if (isset($_FILES["avatar"])) {
                                       </div>
 
                                       <?php if (isset($_SESSION['success_change'])): ?>
-                                          <div class="alert alert-success" style="color:black;"><?php echo $_SESSION['success_change']; ?></div>
+                                          <div class="alert alert-success" style="color:black; margin-top: 2%; width:60%;"><?php echo $_SESSION['success_change']; ?></div>
                                           <?php unset($_SESSION['success_change']); ?>
                                       <?php endif; ?>
 
                                       <?php if (!empty($change_errors)): ?>
-                                          <div class="alert alert-danger" role="alert">
+                                          <div class="alert alert-danger" role="alert" style="width:60%; margin-top: 2%;">
                                               <ul>
                                                   <?php foreach ($change_errors as $error): ?>
                                                       <p style="color:black;"><?php echo $error; ?></p>

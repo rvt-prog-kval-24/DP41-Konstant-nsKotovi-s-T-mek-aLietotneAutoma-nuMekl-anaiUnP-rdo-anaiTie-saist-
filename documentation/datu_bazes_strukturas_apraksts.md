@@ -180,6 +180,6 @@ Tabula “notification_topics” ir saistīta ar tabulu “user”.
 
 Fiziskajā līmenī dati ir organizēti un glabājas, izmantojot tabulu saišu shēmu. Šī struktūra nodrošina efektīvu datu glabāšanu un atgriešanu, nodrošinot labu veiktspēju un optimizētu datu piekļuvi.
 
-![DP4-1 Konstantīns Kotovičs Datubāzes fiziskās struktūras shēma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/4.%20att.%20Entity%20relationship%20modelis.png)
+![DP4-1 Konstantīns Kotovičs Datubāzes fiziskās struktūras shēma]([https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/4.%20att.%20Entity%20relationship%20modelis.png](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/16.%20att.%20Datubāzes%20fiziskās%20struktūras%20shēma.png))
 
 11. att. Datubāzes fiziskās struktūras shēma

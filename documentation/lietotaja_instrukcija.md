@@ -46,7 +46,7 @@ Lai vietne darbotos uz jūsu paša datora, ir nepieciešams veikt instalācijas 
 - Noklikšķiniet uz zaļā pogas "Code" un izvēlieties "Download ZIP".
 - Atarhivējiet lejupielādēto ZIP failu.
 
-![DP4-1 Konstantīns Kotovičs GitHub repozitorija]()
+![DP4-1 Konstantīns Kotovičs GitHub repozitorija](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/17.%20att.%20GitHub%20repozitorija.png)
 
 17. att. GitHub repozitorija
 
@@ -60,12 +60,12 @@ Lai vietne darbotos uz jūsu paša datora, ir nepieciešams veikt instalācijas 
 - Atveriet Laragon un noklikšķiniet uz pogas "Root".
 - Lejupielādētā mape tiks nosaukta kā "autosalons-main". Pārdēvējiet šo mapi uz "autosalons", jo GitHub pievieno "-main" galveno zara nosaukumam.
 
-![DP4-1 Konstantīns Kotovičs mapes nosaukums]()
+![DP4-1 Konstantīns Kotovičs mapes nosaukums](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/18.%20att.%20mapes%20nosaukums.png)
 
 18. att. mapes nosaukums
 - Atarhivējiet iepriekš lejupielādēto ZIP failu mapē "www", kas atrodas mapē, kuru atverat, noklikšķinot uz pogas "Root".
 
-![DP4-1 Konstantīns Kotovičs Largona logs, mape ar projektu]()
+![DP4-1 Konstantīns Kotovičs Largona logs, mape ar projektu](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/19.%20att.%20Largona%20logs%2C%20mape%20ar%20projektu.png)
 
 19. att. Largona logs, mape ar projektu
 
@@ -73,7 +73,7 @@ Lai vietne darbotos uz jūsu paša datora, ir nepieciešams veikt instalācijas 
 
 - Noklikšķiniet uz pogas "Start All" galvenajā Laragon logā, lai palaidinātu tīmekļa serveri un MySQL datu bāzi.
 
-![DP4-1 Konstantīns Kotovičs Largona logs, starta poga]()
+![DP4-1 Konstantīns Kotovičs Largona logs, starta poga](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/20.%20att.%20Largona%20logs%2C%20starta%20poga.png)
 
 20. att. Largona logs, starta poga
 
@@ -84,7 +84,7 @@ Lai vietne darbotos uz jūsu paša datora, ir nepieciešams veikt instalācijas 
 - Atlasiet failu "database.sql", kas atrodas lejupielādētā repozitorija mapē "sql".
 - Šis fails izveidos datu bāzi ar visām nepieciešamajām tabulām.
 
-![DP4-1 Konstantīns Kotovičs Logs ar datubāzes pievienošanu]()
+![DP4-1 Konstantīns Kotovičs Logs ar datubāzes pievienošanu](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/21.%20att.%20Logs%20ar%20datubāzes%20pievienošanu.png)
 
 21. att. Logs ar datubāzes pievienošanu
 
@@ -127,13 +127,13 @@ Atjaunināta pārlūkprogramma: Pārliecinieties, ka pārlūkprogramma ir atjaun
 Vispirms jāatver tīmekļa vietnes sākuma lapu: http://localhost/autosalons/index.php
 1.Reģistrācija vai reģistrētu lietotāju autorizācija. 
 
-![DP4-1 Konstantīns Kotovičs mājaslapas skats]()
+![DP4-1 Konstantīns Kotovičs mājaslapas skats](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/22.%20att.%20mājaslapas%20skats.png)
 
 22. att. mājaslapas skats
 
 Ievadam visus nepieciešamos laukus un noklikšķinam uz pogas “Sign In”, ja nav reģistrēta neviena profila, nospiežam pogu “Sign Up”.
 
-![DP4-1 Konstantīns Kotovičs autorizācijas forma]()
+![DP4-1 Konstantīns Kotovičs autorizācijas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/23.%20att.%20autorizācijas%20forma.png)
  
 23. att. autorizācijas forma
 

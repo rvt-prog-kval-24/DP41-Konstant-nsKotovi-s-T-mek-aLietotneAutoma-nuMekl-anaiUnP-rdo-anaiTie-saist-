@@ -136,11 +136,11 @@ class UserMain {
         return $topics;
     }
 
-    public function getNotificationTopicIDByName($topicName) {
-        $sql = "SELECT topic_id FROM notification_topics WHERE topic_name = :topicName AND userID = :userID";
+    public function getNotificationTopicIDByName($topicName, $userID) {
+        $sql = "SELECT topic_id FROM notification_topics WHERE topic_name = ? AND userID = ?";
         $stmt = $this->conn->prepare($sql);
         $stmt->bindParam(':topicName', $topicName, PDO::PARAM_STR);
-        $stmt->bindParam(':userID', $this->userID, PDO::PARAM_INT);
+        $stmt->bindParam(':userID', $userID, PDO::PARAM_INT);
         $stmt->execute();
         $topicID = $stmt->fetchColumn();
         return $topicID;

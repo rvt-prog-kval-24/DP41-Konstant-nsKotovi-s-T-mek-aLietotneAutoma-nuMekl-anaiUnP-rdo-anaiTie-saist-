@@ -36,6 +36,13 @@ if (isset($_POST["changePassword"])) {
       array_push($change_errors,"New password must not be the same as current password.");
   }
 
+  if (strlen($newPassword) > 30) {
+    array_push($change_errors, "New password should be up to 30 characters");
+  } 
+  if (strlen($newPassword) < 6) {
+    array_push($change_errors, "New password should be at least 6 characters");
+  } 
+
   // проверка, что пароли во втором и третьем полях совпадают
   if ($newPassword !== $confirmPassword) {
       array_push($change_errors,"New password and confirmation password do not match.");

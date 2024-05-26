@@ -361,3 +361,97 @@ Navigācijas joslā ir arī punkts “Help & Information”.
 63. att. informācijas lapa
 
 ## Testa piemērs
+
+1.Pirmajā testa gadījumā pārbaudīsim reģistrācijas funkciju.
+
+Vispirms jāatver saite “http://localhost/autosalons/index.php”, kas ir sākuma lapa, un pēc tam navigācijas joslā jānoklikšķina uz pogas "Registration". 
+
+![DP4-1 Konstantīns Kotovičs sākuma lapa]()
+ 
+64. att. sākuma lapa
+
+- Pirmajā gadījumā aizpildām visus datus, izņemot lietotājvārdu. Var pamanīt, ka sistēma izvada šādas kļūdas: "Nepieciešams aizpildīt lietotājvārda lauku", "Paroles nesakrīt", tas nozīmē, ka paroles laukā ievadītā parole nesakrīt ar atkārtoti ievadīto paroli, kas izraisa šo kļūdu. "E-pasts jau eksistē" nozīmē, ka konts ar šādu e-pasta adresi jau pastāv un ir jāizmanto cita e-pasta adrese.
+
+![DP4-1 Konstantīns Kotovičs reģistrēšanas forma]()
+ 
+65. att. reģistrēšanas forma
+
+- Nākamajā gadījumā aizpildām visus laukus un varam pamanīt, ka parole ir pārāk īsa – tai jābūt vismaz 6 simbolu garai, un lietotājvārds jau ir aizņemts, tāpēc jāizdomā cits.
+
+![DP4-1 Konstantīns Kotovičs reģistrēšanas forma]()
+ 
+66. att. reģistrēšanas forma
+
+- Ja visi lauki ir aizpildīti pareizi un reģistrācija ir veiksmīga, navigācijas panelī varēs redzēt profila attēlu un jaunu paziņojumu.
+
+![DP4-1 Konstantīns Kotovičs navigācijas josla]()
+ 
+67. att. navigācijas josla
+
+Ja visi lauki ir aizpildīti pareizi un reģistrācija ir veiksmīga, navigācijas panelī varēs redzēt profila attēlu un jaunu paziņojumu.
+
+![DP4-1 Konstantīns Kotovičs ziņojuma logs]()
+ 
+68. att. ziņojuma logs
+
+2.Nākamajā testēšanā mēs pārbaudīsim lietotāja paroles maiņu.
+
+- Pirmajā gadījumā visi lauki ir vienādi, un tiek parādīta kļūda, ka jaunajai parolei un esošajai jābūt atšķirīgām.
+
+![DP4-1 Konstantīns Kotovičs paroles maiņas forma]()
+ 
+69. att. paroles maiņas forma
+
+- Otrajā gadījumā esošās paroles lauks ir ievadīts nepareizi, un jaunā parole ir pārāk īsa un tai jābūt vismaz 6 rakstzīmju garumā.
+
+![DP4-1 Konstantīns Kotovičs paroles maiņas forma]()
+ 
+70. att. paroles maiņas forma
+
+- Trešajā gadījumā viens lauks ir izlaists, un tiek parādīts ziņojums ar tekstu, ka šis lauks ir jāaizpilda.
+
+![DP4-1 Konstantīns Kotovičs paroles maiņas forma]()
+ 
+71. att. paroles maiņas forma
+
+- Ja visi lauki ir ievadīti pareizi, tiks parādīts ziņojums par veiksmīgu paroles maiņu, kā arī tiks nosūtīts paziņojums.
+
+![DP4-1 Konstantīns Kotovičs paroles maiņas forma]()
+ 
+72. att. paroles maiņas forma
+
+3.Pārbaude par kontaktinformācijas lauku ievadi pasūtījuma veikšanas laikā.
+
+- Pirmajā gadījumā ir ievadīti visi lauki, izņemot vārdu, un arī nav atzīmēta atbilstošā izvēles rūtiņa līdztekus nosacījumiem. Visi lauki jāaizpilda.
+
+![DP4-1 Konstantīns Kotovičs pasūtīšanas forma]()
+ 
+73. att. pasūtīšanas forma
+
+Tiks parādīts vispārējs teksts, kur norādīts, kā aizpildīt šo veidlapu.
+
+![DP4-1 Konstantīns Kotovičs pasūtīšanas formas kļūda]()
+ 
+74. att. pasūtīšanas formas kļūda
+
+- Otrajā gadījumā tiks parādīta tāda pati kļūdas ziņojumu kaste, jo nosacījumos ir minēts, ka vārdam jābūt vismaz 3 simbolus garumā.
+
+![DP4-1 Konstantīns Kotovičs pasūtīšanas forma]()
+ 
+75. att. pasūtīšanas forma
+
+- Trešajā gadījumā trūkst telefona numura lauka. Tiks parādīta kļūdas ziņojumu kaste.
+
+![DP4-1 Konstantīns Kotovičs pasūtīšanas forma]()
+ 
+76. att. pasūtīšanas forma
+
+- Ja visi lauki ir ievadīti pareizi un ir atzīmēta izvēles rūtiņa, kas norāda uz piekrišanu nosacījumiem, tad parādīsies apstiprinājuma loga izvērsiens pasūtījuma apstiprināšanai.
+
+![DP4-1 Konstantīns Kotovičs pasūtīšanas forma]()
+ 
+77. att. pasūtīšanas forma
+
+![DP4-1 Konstantīns Kotovičs pasūtīšanas forma]()
+ 
+78. att. pasūtīšanas forma

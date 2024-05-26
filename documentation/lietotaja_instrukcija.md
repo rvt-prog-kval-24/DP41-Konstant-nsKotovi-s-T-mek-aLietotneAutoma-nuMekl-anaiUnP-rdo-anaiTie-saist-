@@ -40,7 +40,7 @@ Papildus, lai varētu izpakot lejupielādēto projektu ZIP formātā, ir nepieci
 
 Lai vietne darbotos uz jūsu paša datora, ir nepieciešams veikt instalācijas un palaišanas procesu. Zemāk esošajā instrukcijā ir sniegta detalizēta informācija par katru soli, lai nodrošinātu veiksmīgu vietnes iedarbināšanu lokāli:
 
-1. Vietnes failu lejupielāde no GitHub:
+1.Vietnes failu lejupielāde no GitHub:
 
 - Apmeklējiet GitHub repozitoriju.
 - Noklikšķiniet uz zaļā pogas "Code" un izvēlieties "Download ZIP".
@@ -50,12 +50,12 @@ Lai vietne darbotos uz jūsu paša datora, ir nepieciešams veikt instalācijas 
 
 17. att. GitHub repozitorija
 
-2. Laragon uzstādīšana:
+2.Laragon uzstādīšana:
 
 - Lejupielādējiet un instalējiet Laragon no oficiālās mājas lapas.
 - Palaidiet instalēto Laragon.
 
-3. Vietnes failu novietošana Laragonā:
+3.Vietnes failu novietošana Laragonā:
 
 - Atveriet Laragon un noklikšķiniet uz pogas "Root".
 - Lejupielādētā mape tiks nosaukta kā "autosalons-main". Pārdēvējiet šo mapi uz "autosalons", jo GitHub pievieno "-main" galveno zara nosaukumam.
@@ -69,7 +69,7 @@ Lai vietne darbotos uz jūsu paša datora, ir nepieciešams veikt instalācijas 
 
 19. att. Largona logs, mape ar projektu
 
-4. Servera un datu bāzes palaišana:
+4.Servera un datu bāzes palaišana:
 
 - Noklikšķiniet uz pogas "Start All" galvenajā Laragon logā, lai palaidinātu tīmekļa serveri un MySQL datu bāzi.
 
@@ -77,7 +77,7 @@ Lai vietne darbotos uz jūsu paša datora, ir nepieciešams veikt instalācijas 
 
 20. att. Largona logs, starta poga
 
-5. Datu bāzes izveide:
+5.Datu bāzes izveide:
 
 - Pēc servera palaišanas atveriet datu bāzi, noklikšķinot uz pogas "Database" galvenajā Laragon logā.
 - Pēc datu bāzes atvēršanas noklikšķiniet uz "File" kreisajā augšējā stūrī un izvēlieties "Run SQL file".
@@ -88,39 +88,13 @@ Lai vietne darbotos uz jūsu paša datora, ir nepieciešams veikt instalācijas 
 
 21. att. Logs ar datubāzes pievienošanu
 
-6. Vietnes palaišana:
+6.Vietnes palaišana:
 
 - Atveriet jebkuru interneta pārlūku datorā.
 - Adreses joslā ievadiet: http://localhost/autosalons/index.php.
 - Nospiediet Enter, lai atvērtu vietni.
 
 Pēc šo soļu izpildes, vietne būs gatava lietošanai lokālajā vidē.
-
-## Programmas apraksts 
-
-# Lietotāja ceļvedis
-## Sistēmas prasības
-
-Tīmekļa vietne ir veidota tā, lai būtu pieejama un ērti lietojama uz dažādām ierīcēm, neprasot augstas sistēmas prasības. Tā nodrošina labu lietotāja pieredzi, neatkarīgi no izmantotās ierīces. Tas nozīmē, ka mūsu vietne būs funkcionāla un viegli lietojama gan uz galda datoriem un klēpjdatoriem, gan uz planšetdatoriem un viedtālruņiem.
-
-Minimālās sistēmas prasības
-Lai nodrošinātu optimālu tīmekļa vietnes darbību, ir nepieciešams, lai ierīce atbilstu šādām minimālajām prasībām:
-
-Galda datori un klēpjdatori:
-
-Operētājsistēmas: Windows 7 vai jaunāka, macOS 10.12 Sierra vai jaunāka, Linux (jebkura moderna izplatījuma versija).
-Interneta pārlūkprogrammas: Google Chrome 70 vai jaunāka, Mozilla Firefox 65 vai jaunāka, Microsoft Edge 79 vai jaunāka, Safari 12 vai jaunāka.
-
-Viedtālruņi:
-
-Operētājsistēmas: iOS 12 vai jaunāka, Android 7.0 Nougat vai jaunāka.
-Interneta pārlūkprogrammas: Google Chrome 70 vai jaunāka, Mozilla Firefox 65 vai jaunāka, Safari (iOS), Samsung Internet 10 vai jaunāka.
-Ieteikumi optimālai pieredzei
-Lai nodrošinātu vislabāko lietotāja pieredzi, ieteicams:
-
-Interneta savienojums: Stabils platjoslas savienojums ar ātrumu vismaz 5 Mbps.
-Ekrāna izšķirtspēja: Vismaz 1280x720 pikseļi.
-Atjaunināta pārlūkprogramma: Pārliecinieties, ka pārlūkprogramma ir atjaunināta uz jaunāko versiju, lai nodrošinātu drošību un saderību ar tīmekļa vietni.
 
 ## Programmas apraksts 
 

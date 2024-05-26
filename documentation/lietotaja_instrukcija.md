@@ -113,250 +113,250 @@ Ievadam visus nepieciešamos laukus un noklikšķinam uz pogas “Sign In”, ja
 
 Reģistrācijas lapā ir jāaizpilda vairāk lauku un jāņem vērā formāts un rakstzīmju skaits.
 
-![DP4-1 Konstantīns Kotovičs reģistrācijas forma]()
+![DP4-1 Konstantīns Kotovičs reģistrācijas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/24.%20att.%20reģistrācijas%20forma.png)
  
 24. att. reģistrācijas forma
 
 Ja ievadāt visus datus, tiksiet novirzīts uz sākumlapu, taču atkarībā no ievadītajiem datiem tā tiks rādīta atšķirīgi. Ja pierakstīsieties apkalpojošā personāla kontā, uz kartītēm ar piedāvājumiem redzēsiet statusus, un šie statusi noteiks, vai piedāvājumi tiks rādīti lietotājam vai ne. 
 
-![DP4-1 Konstantīns Kotovičs piedāvājumu atspoguļošanas lapa personālam]()
+![DP4-1 Konstantīns Kotovičs piedāvājumu atspoguļošanas lapa personālam](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/25.%20att.%20piedāvājumu%20atspoguļošanas%20lapa%20personālam.png)
  
 25. att. piedāvājumu atspoguļošanas lapa personālam
 
 Ja pierakstīsieties kā parasts lietotājs, statusi un slēptie piedāvājumi nebūs redzami.
  
-![DP4-1 Konstantīns Kotovičs piedāvājumu atspoguļošanas lapa letotājam]()
+![DP4-1 Konstantīns Kotovičs piedāvājumu atspoguļošanas lapa letotājam](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/26.%20att.%20piedāvājumu%20atspoguļošanas%20lapa%20letotājam.png)
 
 26. att. piedāvājumu atspoguļošanas lapa letotājam
 
 2.Jaunu transportlīdzekļu/piedāvājumu pievienošana.
 Administratora augšējā joslā varam noklikšķināt uz profila attēla, pēc tam parādīsies saraksts, kurā izvēlamies “Add Offer”, un parādīsies lapa, kurā jāaizpilda visi lauki. 
 
-![DP4-1 Konstantīns Kotovičs navigācijas joslā, nolaižamajs saraksts]()
+![DP4-1 Konstantīns Kotovičs navigācijas joslā, nolaižamajs saraksts](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/27.%20att.%20navigācijas%20joslā%2C%20nolaižamajs%20saraksts.png)
  
 27. att. navigācijas joslā, nolaižamajs saraksts
 
 Varam redzēt 4 kolonnas, pirmajā ir vispārīga informācija par automobili, bet pārējās 3 ir saistītas ar konfigurāciju, kas vienam un tam pašam modelim var atšķirties.
 
-![DP4-1 Konstantīns Kotovičs piedāvājumu pievienošanas forma]()
+![DP4-1 Konstantīns Kotovičs piedāvājumu pievienošanas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/28.%20att.%20piedāvājumu%20pievienošanas%20forma.png)
  
 28. att. piedāvājumu pievienošanas forma
 
 Laukā, kur ir nepieciešams izvēlēties automašīnas ražošanas gadu, ērtības dēļ jau ir sagatavoti varianti, jauni gadi tiks pievienoti automātiski.
 
-![DP4-1 Konstantīns Kotovičs ražošanas gada izvēles lauks]()
+![DP4-1 Konstantīns Kotovičs ražošanas gada izvēles lauks](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/29.%20att.%20ražošanas%20gada%20izvēles%20lauks.png)
  
 29. att. ražošanas gada izvēles lauks
 
 3.Piedāvājumu meklēšana un filtrēšana.
 Galvenajā lapā mēs varam redzēt meklēšanas joslu un filtrus blakus, tie darbojas kopā. 
 
-![DP4-1 Konstantīns Kotovičs meklēšanas josla un filtri]()
+![DP4-1 Konstantīns Kotovičs meklēšanas josla un filtri](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/30.%20att.%20meklēšanas%20josla%20un%20filtri.png)
 
 30. att. meklēšanas josla un filtri
 
 Ja netiks atrasti atbilstoši piedāvājumi, tiks parādīts uzraksts: “Sorry, but we couldn't find anything.”, bet, ja būs sakritības, tiks parādīti atbilstoši automobiļi.
 
-![DP4-1 Konstantīns Kotovičs izejas virkne, ja nekas nav atrasts]()
+![DP4-1 Konstantīns Kotovičs izejas virkne, ja nekas nav atrasts](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/31.%20att.%20izejas%20virkne%2C%20ja%20nekas%20nav%20atrasts.png)
  
 31. att. izejas virkne, ja nekas nav atrasts
 
 Ja mēs ievadām gan meklēšanas joslā, gan filtros, lai atlasītu parametrus, tad tiks ņemti vērā visi atlasītie vai ievadītie lauki.
 
-![DP4-1 Konstantīns Kotovičs piedāvājumu sadaļa]()
+![DP4-1 Konstantīns Kotovičs piedāvājumu sadaļa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/32.%20att.%20piedāvājumu%20sadaļa.png)
  
 32. att. piedāvājumu sadaļa
 
 Lai apskatītu informāciju par piedāvājumu un ar to saistīto funkcionalitāti, ir jānovieto kursors virs attiecīgās kartiņas un jānoklikšķina uz pogas “Skatīt”.
 
-![DP4-1 Konstantīns Kotovičs piedāvājumu kartiņa]()
+![DP4-1 Konstantīns Kotovičs piedāvājumu kartiņa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/33.%20att.%20piedāvājumu%20kartiņa.png)
  
 33. att. piedāvājumu kartiņa
 
 4.Transportlīdzekļa lapa un to pasūtīšana.
 Šajā lapā mēs varam redzēt visu detalizēto informāciju par izvēlēto piedāvājumu.
 
-![DP4-1 Konstantīns Kotovičs piedāvājuma lapa no apkalpojošā personāla skata]()
+![DP4-1 Konstantīns Kotovičs piedāvājuma lapa no apkalpojošā personāla skata](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/34.%20att.%20piedāvājuma%20lapa%20no%20apkalpojošā%20personāla%20skata.png)
  
 34. att. piedāvājuma lapa no apkalpojošā personāla skata
 
 Atšķirībā no administratora lietotājam nav pogas “Settings”.
 
-![DP4-1 Konstantīns Kotovičs piedāvājuma detalizētā informācija]()
+![DP4-1 Konstantīns Kotovičs piedāvājuma detalizētā informācija](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/35.%20att.%20piedāvājuma%20detalizētā%20informācija.png)
  
 35. att. piedāvājuma detalizētā informācija
 
 Atsevišķā logā tiek parādītas visas konfigurācijas, kas ir saistītas ar šo modeli, un izvēlētā konfigurācija ir pelēkā krāsā.
 
-![DP4-1 Konstantīns Kotovičs konfigurāciju izvēles logs]()
+![DP4-1 Konstantīns Kotovičs konfigurāciju izvēles logs](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/36.%20att.%20konfigurāciju%20izvēles%20logs.png)
  
 36. att. konfigurāciju izvēles logs
 
 Izvēloties citu konfigurāciju un noklikšķinot uz pogas “Choose”, mēs tiksim novirzīti uz tā paša modeļa lapu, bet ar citu konfigurāciju.
 
-![DP4-1 Konstantīns Kotovičs piedāvājuma lapa no lietotāja skata]()
+![DP4-1 Konstantīns Kotovičs piedāvājuma lapa no lietotāja skata](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/37.%20att.%20piedāvājuma%20lapa%20no%20lietotāja%20skata.png)
  
 37. att. piedāvājuma lapa no lietotāja skata
 
 Lai pasūtītu izvēlēto automašīnu, nospiežam pogu “Get an offer”. Pēc tam aizpildam nepieciešamos laukus ar kontaktinformāciju un atzīmējam, ka piekrītam noteikumiem.
 
-![DP4-1 Konstantīns Kotovičs pasūtīšanas forma]()
+![DP4-1 Konstantīns Kotovičs pasūtīšanas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/38.%20att.%20pasūtīšanas%20forma.png)
  
 38. att. pasūtīšanas forma
 
 Pēc tam tiek parādīts apstiprinājuma logs ar visu informāciju par automašīnu un lietotāju, kas veicis pasūtījumu.
 
-![DP4-1 Konstantīns Kotovičs apstiprinājuma logs]()
+![DP4-1 Konstantīns Kotovičs apstiprinājuma logs](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/39.%20att.%20apstiprinājuma%20logs.png)
  
 39. att. apstiprinājuma logs
 
 Ja pasūtījums ir veiksmīgi nosūtīts, lietotājs saņems paziņojumu.
 
-![DP4-1 Konstantīns Kotovičs ziņojumu logs]()
+![DP4-1 Konstantīns Kotovičs ziņojumu logs](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/40.%20att.%20ziņojumu%20logs.png)
  
 40. att. ziņojumu logs
 
 5.Transportlīdzekļa konfigurācijas dzēšana vai informācijas rediģēšana.
 Administratoram piedāvājuma lapā ir poga ar parametriem, noklikšķinot uz tās, parādās logs, kura pirmajā sadaļā var rediģēt informāciju par pašu modeli un konkrēto konfigurāciju.
 
-![DP4-1 Konstantīns Kotovičs informācijas rediģēšanas sadaļa]()
+![DP4-1 Konstantīns Kotovičs informācijas rediģēšanas sadaļa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/41.%20att.%20informācijas%20rediģēšanas%20sadaļa.png)
  
 41. att. informācijas rediģēšanas sadaļa
 
 Otrā sadaļa ļauj pievienot jaunas konfigurācijas esošajam modelim.
 
-![DP4-1 Konstantīns Kotovičs konfigurāciju pievienošanas sadaļa]()
+![DP4-1 Konstantīns Kotovičs konfigurāciju pievienošanas sadaļa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/42.%20att.%20konfigurāciju%20pievienošanas%20sadaļa.png)
  
 42. att. konfigurāciju pievienošanas sadaļa
 
 Un trešajā sadaļā ir iespēja izdzēst konkrēto konfigurāciju vai pārveidot to par neaktīvu, tad tā netiks rādīta lietotājam.
 
-![DP4-1 Konstantīns Kotovičs kontroles pogas sadaļa]()
+![DP4-1 Konstantīns Kotovičs kontroles pogas sadaļa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/43.%20att.%20kontroles%20pogas%20sadaļa.png)
  
 43. att. kontroles pogas sadaļa
 
 6.Ziņojumu saņemšana un to dzēšana.
 Katram reģistrētajam lietotājam ir paziņojumu attēls navigācijas joslā, ja nav nelasītu paziņojumu, tā būs neaktīva.
 
-![DP4-1 Konstantīns Kotovičs navigācijas josla ar neaktīvo attēlu]()
+![DP4-1 Konstantīns Kotovičs navigācijas josla ar neaktīvo attēlu](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/44.%20att.%20navigācijas%20josla%20ar%20neaktīvo%20attēlu.png)
  
 44. att. navigācijas josla ar neaktīvo attēlu
 
 Ja ir jauni paziņojumi, kurus lietotājs nav izlasījis, tā tiks mainīta uz aktīvu.
 
-![DP4-1 Konstantīns Kotovičs navigācijas josla ar aktīvo attēlu]()
+![DP4-1 Konstantīns Kotovičs navigācijas josla ar aktīvo attēlu](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/45.%20att.%20navigācijas%20josla%20ar%20aktīvo%20attēlu.png)
  
 45. att. navigācijas josla ar aktīvo attēlu
 
 Noklikšķinot uz šī attēla, tiks atvērts logs ar saņemtajiem paziņojumiem. Visus paziņojumus var dzēst, noklikšķinot uz krustiņa pret tiem, vai arī var dzēst tos visus uzreiz, noklikšķinot uz pogas “Clear all”. Ziņojumi ir sadalīti 3 tēmās: “Forum”, “Orders”, “Profile”, katrs paziņojums ir saistīts ar attiecīgo tēmu, piemēram, ja tiek atbildēts uz lietotāja sesijā atstāto komentāru, tiks nosūtīts paziņojums ar tēmu “Forums”. 
 
-![DP4-1 Konstantīns Kotovičs ziņojumu logs]()
+![DP4-1 Konstantīns Kotovičs ziņojumu logs](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/46.%20att.%20ziņojumu%20logs.png)
  
 46. att. ziņojumu logs
 
 Lietotājs var paslēpt tēmas, kas viņu neinteresē, izvēloties iespēju “Hide” pie konkrētām tēmām, un paziņojumi netiks rādīti.
 
-![DP4-1 Konstantīns Kotovičs tukšs ziņojumu logs]()
+![DP4-1 Konstantīns Kotovičs tukšs ziņojumu logs](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/47.%20att.%20tukšs%20ziņojumu%20logs.png)
  
 47. att. tukšs ziņojumu logs
 
 7.Lietotāja lapa un tās rediģēšana.
 Lai nokļūtu profila lapā, navigācijas joslā no nolaižamajā sarakstā jāizvēlas “Profile & Orders”.
 
-![DP4-1 Konstantīns Kotovičs navigācijas joslā, nolaižamajs saraksts]()
+![DP4-1 Konstantīns Kotovičs navigācijas joslā, nolaižamajs saraksts](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/48.%20att.%20navigācijas%20joslā%2C%20nolaižamajs%20saraksts.png)
  
 48. att. navigācijas joslā, nolaižamajs saraksts
 
 Lapā var mainīt profila attēlu, bet paroli apkalpojošs personāls nevar mainīt patstāvīgi, to var darīt tikai administrators.
 
-![DP4-1 Konstantīns Kotovičs personāla profila lapa]()
+![DP4-1 Konstantīns Kotovičs personāla profila lapa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/49.%20att.%20personāla%20profila%20lapa.png)
  
 49. att. personāla profila lapa
 
 Atšķirībā no apkalpojošā personāla lietotāji var mainīt savu paroli, ievadot pašreizējo paroli, jauno paroli un atkārtoti jauno paroli.
 
-![DP4-1 Konstantīns Kotovičs lietotāja profila lapa]()
+![DP4-1 Konstantīns Kotovičs lietotāja profila lapa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/50.%20att.%20lietotāja%20profila%20lapa.png)
  
 50. att. lietotāja profila lapa
 
 Izvēloties otro sadaļu “My Orders”, var apskatīt savu pasūtījumu vēsturi.
 
-![DP4-1 Konstantīns Kotovičs lietotāja pasūtījumu vēstures lapa]()
+![DP4-1 Konstantīns Kotovičs lietotāja pasūtījumu vēstures lapa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/51.%20att.%20lietotāja%20pasūtījumu%20vēstures%20lapa.png)
  
 51. att. lietotāja pasūtījumu vēstures lapa
 
 Tabulu ar pasūtījumiem var eksportēt Excel failā, noklikšķinot uz pogas “Export To Excel”.
 
-![DP4-1 Konstantīns Kotovičs lietotāja pasūtījumu vēstures Excel tabula]()
+![DP4-1 Konstantīns Kotovičs lietotāja pasūtījumu vēstures Excel tabula](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/52.%20att.%20lietotāja%20pasūtījumu%20vēstures%20Excel%20tabula.png)
  
 52. att. lietotāja pasūtījumu vēstures Excel tabula
 
 8.Visu lietotāju pasūtījumu vēsture un izpildes statusa rediģēšana.
 Lai apskatīt visu lietotāju pasūtījumu vēsturi, navigācijas joslā no nolaižamajā sarakstā jāizvēlas “All orders”. 
 
-![DP4-1 Konstantīns Kotovičs navigācijas joslā nolaižamajs saraksts]()
+![DP4-1 Konstantīns Kotovičs navigācijas joslā nolaižamajs saraksts](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/53.%20att.%20navigācijas%20joslā%20nolaižamajs%20saraksts.png)
  
 53. att. navigācijas joslā nolaižamajs saraksts
 
 Šī lapa ir paredzēta tikai apkalpojošajam personālam.
 
-![DP4-1 Konstantīns Kotovičs visu lietotāju pasūtījumu vēstures lapa]()
+![DP4-1 Konstantīns Kotovičs visu lietotāju pasūtījumu vēstures lapa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/54.%20att.%20visu%20lietotāju%20pasūtījumu%20vēstures%20lapa.png)
  
 54. att. visu lietotāju pasūtījumu vēstures lapa
 
 Šajā lapā ir 3 sadaļas: “New”, “In progress”, “Done”.  Tas nozīmē, ka pasūtījumi ir iedalīti 3 kategorijās, kurās var mainīt katra pasūtījuma statusu, un pēc pogas “Save changes” nospiešanas ieraksti tiek pārvietoti uz attiecīgajām tabulām.
 
-![DP4-1 Konstantīns Kotovičs statusa rediģēšanas forma]()
+![DP4-1 Konstantīns Kotovičs statusa rediģēšanas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/55.%20att.%20statusa%20rediģēšanas%20forma.png)
  
 55. att. statusa rediģēšanas forma
 
 Šo tabulu var arī izvadīt Excel failā, noklikšķinot uz pogas “Export to Excel” augšējā labajā stūrī.
 
-![DP4-1 Konstantīns Kotovičs lietotāja pasūtījumu vēstures Excel tabula]()
+![DP4-1 Konstantīns Kotovičs lietotāja pasūtījumu vēstures Excel tabula](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/56.%20att.%20lietotāja%20pasūtījumu%20vēstures%20Excel%20tabula.png)
  
 56. att. lietotāja pasūtījumu vēstures Excel tabula
 
 9.Komentāru pievienošana un dzēšana.
 Lai nokļūtu šajā lapā, navigācijas joslā izvēlieties “Forum”. 
 
-![DP4-1 Konstantīns Kotovičs navigācijas joslā, nolaižamajs saraksts]()
+![DP4-1 Konstantīns Kotovičs navigācijas joslā, nolaižamajs saraksts](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/57.%20att.%20navigācijas%20joslā%2C%20nolaižamajs%20saraksts.png)
  
 57. att. navigācijas joslā, nolaižamajs saraksts
 
 Pirmo reizi atverot šo lapu, lietotājam tiks parādīti foruma noteikumi, kuri ir jāpieņem, lai varētu lasīt un atstāt komentārus, tas ir jādara tikai vienu reizi, pēc tam šis logs vairs netiks rādīts.
 
-![DP4-1 Konstantīns Kotovičs foruma noteikumi]()
+![DP4-1 Konstantīns Kotovičs foruma noteikumi](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/58.%20att.%20foruma%20noteikumi.png)
  
 58. att. foruma noteikumi
 
 Autorizētiem lietotājiem ir iespēja publicēt komentārus līdz 700 rakstzīmēm vai atbildēt uz citiem komentāriem, kā arī iespēja dzēst savus komentārus. Personāls var dzēst visus komentārus.
 
-![DP4-1 Konstantīns Kotovičs komentāru lapa]()
+![DP4-1 Konstantīns Kotovičs komentāru lapa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/59.%20att.%20komentāru%20lapa.png)
  
 59. att. komentāru lapa
 
 10.Informācijas lapu apskate.
 Lai skatītu kontaktinformāciju, navigācijas joslā noklikšķiniet uz pogas “About Us”.
 
-![DP4-1 Konstantīns Kotovičs navigācijas joslā]()
+![DP4-1 Konstantīns Kotovičs navigācijas joslā](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/60.%20att.%20navigācijas%20joslā.png)
  
 60. att. navigācijas joslā
 
 Šajā lapā ir saites uz pakalpojuma sociālajiem tīkliem, kā arī visa kontaktinformācija.
 
-![DP4-1 Konstantīns Kotovičs kontaktinformācijas lapa]()
+![DP4-1 Konstantīns Kotovičs kontaktinformācijas lapa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/61.%20att.%20kontaktinformācijas%20lapa.png)
  
 61. att. kontaktinformācijas lapa
 
 Navigācijas joslā ir arī punkts “Help & Information”.
 
-![DP4-1 Konstantīns Kotovičs navigācijas joslā, nolaižamajs saraksts]()
+![DP4-1 Konstantīns Kotovičs navigācijas joslā, nolaižamajs saraksts](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/62.%20att.%20navigācijas%20joslā%2C%20nolaižamajs%20saraksts.png)
  
 62. att. navigācijas joslā, nolaižamajs saraksts
 
 Šajā lapā ir arī neliela informācija par pakalpojumu.
 
-![DP4-1 Konstantīns Kotovičs informācijas lapa]()
+![DP4-1 Konstantīns Kotovičs informācijas lapa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/63.%20att.%20informācijas%20lapa.png)
  
 63. att. informācijas lapa
 

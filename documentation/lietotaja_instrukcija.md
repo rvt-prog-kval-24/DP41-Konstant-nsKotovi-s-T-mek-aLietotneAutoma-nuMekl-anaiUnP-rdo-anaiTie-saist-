@@ -366,31 +366,31 @@ Navigācijas joslā ir arī punkts “Help & Information”.
 
 Vispirms jāatver saite “http://localhost/autosalons/index.php”, kas ir sākuma lapa, un pēc tam navigācijas joslā jānoklikšķina uz pogas "Registration". 
 
-![DP4-1 Konstantīns Kotovičs sākuma lapa]()
+![DP4-1 Konstantīns Kotovičs sākuma lapa](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/64.%20att.%20sākuma%20lapa.png)
  
 64. att. sākuma lapa
 
 - Pirmajā gadījumā aizpildām visus datus, izņemot lietotājvārdu. Var pamanīt, ka sistēma izvada šādas kļūdas: "Nepieciešams aizpildīt lietotājvārda lauku", "Paroles nesakrīt", tas nozīmē, ka paroles laukā ievadītā parole nesakrīt ar atkārtoti ievadīto paroli, kas izraisa šo kļūdu. "E-pasts jau eksistē" nozīmē, ka konts ar šādu e-pasta adresi jau pastāv un ir jāizmanto cita e-pasta adrese.
 
-![DP4-1 Konstantīns Kotovičs reģistrēšanas forma]()
+![DP4-1 Konstantīns Kotovičs reģistrēšanas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/65.%20att.%20reģistrēšanas%20forma.png)
  
 65. att. reģistrēšanas forma
 
 - Nākamajā gadījumā aizpildām visus laukus un varam pamanīt, ka parole ir pārāk īsa – tai jābūt vismaz 6 simbolu garai, un lietotājvārds jau ir aizņemts, tāpēc jāizdomā cits.
 
-![DP4-1 Konstantīns Kotovičs reģistrēšanas forma]()
+![DP4-1 Konstantīns Kotovičs reģistrēšanas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/66.%20att.%20reģistrēšanas%20forma.png)
  
 66. att. reģistrēšanas forma
 
 - Ja visi lauki ir aizpildīti pareizi un reģistrācija ir veiksmīga, navigācijas panelī varēs redzēt profila attēlu un jaunu paziņojumu.
 
-![DP4-1 Konstantīns Kotovičs navigācijas josla]()
+![DP4-1 Konstantīns Kotovičs navigācijas josla](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/67.%20att.%20navigācijas%20josla.png)
  
 67. att. navigācijas josla
 
 Ja visi lauki ir aizpildīti pareizi un reģistrācija ir veiksmīga, navigācijas panelī varēs redzēt profila attēlu un jaunu paziņojumu.
 
-![DP4-1 Konstantīns Kotovičs ziņojuma logs]()
+![DP4-1 Konstantīns Kotovičs ziņojuma logs](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/68.%20att.%20ziņojuma%20logs.png)
  
 68. att. ziņojuma logs
 
@@ -398,25 +398,25 @@ Ja visi lauki ir aizpildīti pareizi un reģistrācija ir veiksmīga, navigācij
 
 - Pirmajā gadījumā visi lauki ir vienādi, un tiek parādīta kļūda, ka jaunajai parolei un esošajai jābūt atšķirīgām.
 
-![DP4-1 Konstantīns Kotovičs paroles maiņas forma]()
+![DP4-1 Konstantīns Kotovičs paroles maiņas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/69.%20att.%20paroles%20maiņas%20forma.png)
  
 69. att. paroles maiņas forma
 
 - Otrajā gadījumā esošās paroles lauks ir ievadīts nepareizi, un jaunā parole ir pārāk īsa un tai jābūt vismaz 6 rakstzīmju garumā.
 
-![DP4-1 Konstantīns Kotovičs paroles maiņas forma]()
+![DP4-1 Konstantīns Kotovičs paroles maiņas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/70.%20att.%20paroles%20maiņas%20forma.png)
  
 70. att. paroles maiņas forma
 
 - Trešajā gadījumā viens lauks ir izlaists, un tiek parādīts ziņojums ar tekstu, ka šis lauks ir jāaizpilda.
 
-![DP4-1 Konstantīns Kotovičs paroles maiņas forma]()
+![DP4-1 Konstantīns Kotovičs paroles maiņas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/71.%20att.%20paroles%20maiņas%20forma.png)
  
 71. att. paroles maiņas forma
 
 - Ja visi lauki ir ievadīti pareizi, tiks parādīts ziņojums par veiksmīgu paroles maiņu, kā arī tiks nosūtīts paziņojums.
 
-![DP4-1 Konstantīns Kotovičs paroles maiņas forma]()
+![DP4-1 Konstantīns Kotovičs paroles maiņas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/72.%20att.%20paroles%20maiņas%20forma.png)
  
 72. att. paroles maiņas forma
 
@@ -424,34 +424,34 @@ Ja visi lauki ir aizpildīti pareizi un reģistrācija ir veiksmīga, navigācij
 
 - Pirmajā gadījumā ir ievadīti visi lauki, izņemot vārdu, un arī nav atzīmēta atbilstošā izvēles rūtiņa līdztekus nosacījumiem. Visi lauki jāaizpilda.
 
-![DP4-1 Konstantīns Kotovičs pasūtīšanas forma]()
+![DP4-1 Konstantīns Kotovičs pasūtīšanas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/73.%20att.%20pasūtīšanas%20forma.png)
  
 73. att. pasūtīšanas forma
 
 Tiks parādīts vispārējs teksts, kur norādīts, kā aizpildīt šo veidlapu.
 
-![DP4-1 Konstantīns Kotovičs pasūtīšanas formas kļūda]()
+![DP4-1 Konstantīns Kotovičs pasūtīšanas formas kļūda](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/74.%20att.%20pasūtīšanas%20formas%20kļūda.png)
  
 74. att. pasūtīšanas formas kļūda
 
 - Otrajā gadījumā tiks parādīta tāda pati kļūdas ziņojumu kaste, jo nosacījumos ir minēts, ka vārdam jābūt vismaz 3 simbolus garumā.
 
-![DP4-1 Konstantīns Kotovičs pasūtīšanas forma]()
+![DP4-1 Konstantīns Kotovičs pasūtīšanas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/75.%20att.%20pasūtīšanas%20forma.png)
  
 75. att. pasūtīšanas forma
 
 - Trešajā gadījumā trūkst telefona numura lauka. Tiks parādīta kļūdas ziņojumu kaste.
 
-![DP4-1 Konstantīns Kotovičs pasūtīšanas forma]()
+![DP4-1 Konstantīns Kotovičs pasūtīšanas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/76.%20att.%20pasūtīšanas%20forma.png)
  
 76. att. pasūtīšanas forma
 
 - Ja visi lauki ir ievadīti pareizi un ir atzīmēta izvēles rūtiņa, kas norāda uz piekrišanu nosacījumiem, tad parādīsies apstiprinājuma loga izvērsiens pasūtījuma apstiprināšanai.
 
-![DP4-1 Konstantīns Kotovičs pasūtīšanas forma]()
+![DP4-1 Konstantīns Kotovičs pasūtīšanas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/77.%20att.%20pasūtīšanas%20forma.png)
  
 77. att. pasūtīšanas forma
 
-![DP4-1 Konstantīns Kotovičs pasūtīšanas forma]()
+![DP4-1 Konstantīns Kotovičs pasūtīšanas forma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/78.%20att.%20pasūtīšanas%20forma.png)
  
 78. att. pasūtīšanas forma

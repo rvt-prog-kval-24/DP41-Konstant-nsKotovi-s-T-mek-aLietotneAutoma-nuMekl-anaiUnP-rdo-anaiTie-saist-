@@ -1,5 +1,5 @@
 # ER-diagramma
-Datu bāzes projektēšanā datu kopu un saišu starp tām attēlošanai tika lietota relācijusaišu diagramma, kas sastāv no divām veidu objektiem – entītijām (loģiskais objekts) un relācijām(attiecības). Sistēmas ER modelis (sk.4. attēlu) sastāvēs no 6 entītijām un vienas saites (relācijas), kas atspoguļo datu aprītisistēmā. Tas nodrošina pamat informācijas uzglabāšanu un apstrādi. Tie ir:
+Datu bāzes projektēšanā datu kopu un saišu starp tām attēlošanai tika lietota relācijusaišu diagramma, kas sastāv no divām veidu objektiem – entītijām (loģiskais objekts) un relācijām(attiecības). Sistēmas ER modelis (sk.4. attēlu) sastāvēs no 11 entītijām. Tas nodrošina pamat informācijas uzglabāšanu un apstrādi. Tie ir: 
 
 * “Komentārijs” – apraksta komentārus, kas raksta lietotāji. Tās atribūtu kopums sevī ietver datumu, paša komentāra saturu un saiti uz vecāku komentāriju (Glabā saiti uz komentāriju uz kuru atbildēja. Ja tas ir oriģināls, neko neglabās.). Tabula “Komentārijs” ir saistīta ar tabulu “Lietotājs”. Vienam lietotājam var būt vairāki komentāri (sk.4. attēlu), bet komentāram tikai viens lietotājs. 
 

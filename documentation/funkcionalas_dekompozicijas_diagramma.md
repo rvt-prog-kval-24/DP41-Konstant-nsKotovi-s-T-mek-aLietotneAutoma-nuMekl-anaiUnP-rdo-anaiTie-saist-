@@ -2,7 +2,7 @@
 ## Sistēmas struktūras modelis
 ### Sistēmas arhitektūra 
 
-Sistēmu (sk. 5. attēlu) veido trīš apakšsistēmas: apkalpojošo personālu modulis, lietotāja modulis, sistēmas modulis.
+Sistēmu (sk. 5. attēlu) veido trīš apakšsistēmas: apkalpojošo personālu modulis, lietotāja modulis, sistēmas modulis. Ar oranžu krāsu ir atzīmētas funkcijas, kuras tiks izmantotas kā piemēri 4.2.1. punktā datu plūsmu diagrammās.
 ![DP4-1 Konstantīns Kotovičs FD diagramma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/5.%20att.%20FD%20diagramma.png)
 
 5. att. FD diagramma

@@ -178,9 +178,9 @@ CREATE TABLE IF NOT EXISTS `notifications` (
   PRIMARY KEY (`notification_id`),
   KEY `topic_id` (`topic_id`),
   CONSTRAINT `topic_id` FOREIGN KEY (`topic_id`) REFERENCES `notification_topics` (`topic_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=168 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=175 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Дамп данных таблицы mariadb.notifications: ~17 rows (приблизительно)
+-- Дамп данных таблицы mariadb.notifications: ~18 rows (приблизительно)
 DELETE FROM `notifications`;
 INSERT INTO `notifications` (`notification_id`, `message`, `created_at`, `is_read`, `topic_id`) VALUES
 	(128, 'You have successfully registered! If you need <a href=\'infoPage.php\'>Help</a>, please visit the Help section.', '2024-03-17 00:11:41', 1, 9),
@@ -199,7 +199,8 @@ INSERT INTO `notifications` (`notification_id`, `message`, `created_at`, `is_rea
 	(164, 'Your order has been successfully completed! Please wait while our staff contacts You. You can check your order <a href=\'profile.php\'>here</a> in the \'My Orders\' tab.', '2024-05-12 23:47:57', 1, 2),
 	(165, 'Your order has been successfully completed! Please wait while our staff contacts You. You can check your order <a href=\'profile.php\'>here</a> in the \'My Orders\' tab.', '2024-05-16 22:26:58', 1, 2),
 	(166, 'Your order has been successfully completed! Please wait while our staff contacts You. You can check your order <a href=\'profile.php\'>here</a> in the \'My Orders\' tab.', '2024-05-16 22:28:15', 1, 2),
-	(167, 'Your order has been successfully completed! Please wait while our staff contacts You. You can check your order <a href=\'profile.php\'>here</a> in the \'My Orders\' tab.', '2024-05-16 22:29:08', 1, 2);
+	(167, 'Your order has been successfully completed! Please wait while our staff contacts You. You can check your order <a href=\'profile.php\'>here</a> in the \'My Orders\' tab.', '2024-05-16 22:29:08', 1, 2),
+	(174, 'Your password has been successfully changed!', '2024-05-21 14:40:06', 1, 9);
 
 -- Дамп структуры для таблица mariadb.notification_topics
 CREATE TABLE IF NOT EXISTS `notification_topics` (
@@ -295,11 +296,11 @@ CREATE TABLE IF NOT EXISTS `order` (
   CONSTRAINT `orderUserID` FOREIGN KEY (`orderUserID`) REFERENCES `user` (`userID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=261 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_latvian_ci;
 
--- Дамп данных таблицы mariadb.order: ~2 rows (приблизительно)
+-- Дамп данных таблицы mariadb.order: ~1 rows (приблизительно)
 DELETE FROM `order`;
 INSERT INTO `order` (`orderID`, `orderDate`, `name`, `surname`, `telephone`, `status`, `orderUserID`, `orderOfferID`, `orderDetailsID`) VALUES
 	(252, '2024-05-13', 'xcvxcv', '34343', '+371 34322', 'New', 1, 67, 14),
-	(260, '2024-05-17', 'Kostja', 'Kotovich', '23423443344534', 'Done', 1, 70, 16);
+	(260, '2024-05-17', 'Kostja', 'Kotovich', '23423443344534', 'In progress', 1, 70, 16);
 
 -- Дамп структуры для таблица mariadb.specific_details
 CREATE TABLE IF NOT EXISTS `specific_details` (
@@ -321,7 +322,7 @@ CREATE TABLE IF NOT EXISTS `specific_details` (
   CONSTRAINT `transmissionID` FOREIGN KEY (`transmissionID`) REFERENCES `transmission` (`transmissionID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=189 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Дамп данных таблицы mariadb.specific_details: ~6 rows (приблизительно)
+-- Дамп данных таблицы mariadb.specific_details: ~7 rows (приблизительно)
 DELETE FROM `specific_details`;
 INSERT INTO `specific_details` (`detailsID`, `colorID`, `offersInfoID`, `transmissionID`, `created_at`, `engineID`, `active_status`) VALUES
 	(12, 49, 69, 2, '2024-04-18 12:09:13', 8, 0),
@@ -385,7 +386,7 @@ INSERT INTO `user` (`userID`, `username`, `email`, `password`, `picture`, `roleI
 	(46, 'konstantins', 'konstantins@gmail.com', '$2y$10$56e9Nl1IXJWYOcKYrgKncOAT4p99/PYH1UtvPgHjPKSUgJmZbQ58O', NULL, 0, NULL),
 	(48, 'Konstantins Kotovich', 'kostja@gmail.com', '$2y$10$t80eqpaNFAky2CFIe8B5MO/AVwBujCBKrX90U6ysi5xh4GgzJVXfa', NULL, 0, NULL),
 	(50, '1234', '1234@1234.com', '$2y$10$wMepL4xJFeGY2BU4RbGx2e6jC5mCKkp7KEqHA.GZab9RQcC2JrLzS', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
-	(55, '123', '123@123.com', '$2y$10$BTJNbFdTqAD5QD22PGRnO.htfW6imQ6Y9IzkNKQ7bbyDPAMuj9N1e', _binary 0x696d672f6176617461722f68756d61737072696b6f6c2e706e67, 0, 1),
+	(55, '123', '123@123.com', '$2y$10$QTOYR2Ktjp/jOL1aOFoqduXiTPdoTf/8ngSUZuvDMd6o9nhHjlhJe', _binary 0x696d672f6176617461722f68756d61737072696b6f6c2e706e67, 0, 1),
 	(56, '12345', '12345@a.com', '$2y$10$WvxQcssDA7WqShLuc.i6WuFKe8iBnAXGabtziroIlPzHOaPldvDIm', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
 	(57, 'Kostja', 'kostja.kotovich@inbox.lv', '$2y$10$VCnCqu/X3vJskhZU8po9cuzCDEm4H.cOx6luPXbhzWIU8wd.IrEJ6', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
 	(59, '123456', 'kostja.kohghtovich@gmail.com', '$2y$10$PBRYzRNI4eDNI4ozoEVH5.E2/kOrO080adz7pzeRapR2emhyymMrS', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
@@ -393,7 +394,7 @@ INSERT INTO `user` (`userID`, `username`, `email`, `password`, `picture`, `roleI
 	(64, 'o7d1', 'kostja.kotovidsfch@gmail.com', '$2y$10$rPoNbDa2LafKdgFIqZPvg.88Z.Dz2FbUV1KPUCbu8GANG4dm8.E.e', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
 	(65, 'o7d3', 'kostja.kotovfsdich@gmail.com', '$2y$10$PFULBb6sAsCNngx0hKUYS..hUmoi3Zfa.9aSJl2LoJMB5e.L3g7o6', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
 	(66, 'o7d6', 'kostja.kotofhgfgvich@gmail.com', '$2y$10$td33qZ.ttr9qTs9hYiwfU.Np.kUCqICbnbeCH3.5OVz6ghRUZtelS', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
-	(69, 'kostjaKO', 'kostjaKO@gmaiil.com', '$2y$10$NJEy4rvytnpi91A9u5/pw.uCG1KM3ynZE65zDjPFsZFvPbR080WiS', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, 1);
+	(69, 'kostjaKO', 'kostjaKO@gmaiil.com', '$2y$10$.4TT6RhelEovxMPILmG9i./aqdtiZWvs/A8endcwKfFd7kcHNPh.K', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, 1);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

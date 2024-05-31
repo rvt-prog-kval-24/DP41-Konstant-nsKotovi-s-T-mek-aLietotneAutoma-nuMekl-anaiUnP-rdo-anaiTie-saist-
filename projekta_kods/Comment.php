@@ -100,7 +100,7 @@ class Comment {
         $userMain = new UserMain($originalCommentUserID);
             
         $topicName = 'Forum';
-        $topicID = $userMain->getNotificationTopicIDByName($topicName, $originalCommentUserID);
+        $topicID = $userMain->getNotificationTopicIDByName($topicName);
             
         $userMain->addNotification($topicID, $notificationText);
     }

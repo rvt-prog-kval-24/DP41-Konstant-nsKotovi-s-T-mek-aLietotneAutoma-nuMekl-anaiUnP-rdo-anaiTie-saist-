@@ -361,6 +361,22 @@ Navigācijas joslā ir arī punkts “Help & Information”.
 63. att. informācijas lapa
 
 ## Testa piemērs
+Šajā sadaļā ir sniegti piemēri, kas parāda, kā pārbaudīt sistēmas funkcionalitāti dažādās situācijās. Katram testam ir aprakstīti ievaddati un sagaidāmais rezultāts, kas palīdzēs saprast, kā sistēma reaģē uz konkrētiem ievaddatiem un kādi kļūdu ziņojumi tiek rādīti lietotājam. Tas palīdzēs nodrošināt, ka sistēma darbojas atbilstoši specifikācijām un lietotāju prasībām.
+
+| Nr. | Prasības numurs | Prasības nosaukums       | Ievaddati/situācijas apraksts                                     | Sagaidāmais rezultāts                                          | Statuss |
+| --- | ---------------- | ------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------- | ------- |
+| 1.  | 1.               | Jauna lietotāja reģistrācija | Pareizi dati lietotāja vārds, lietotāja e-pasts, 1.parole, 2.parole | Ieraksts ir pievienots datubāzei, un lietotājam tiek nosūtīts paziņojums. | Pareizi |
+| 2.  |                  |                           | konstantins@gmail.com                                            | Paziņojums, ka šis e-pasts jau ir aizņemts                     | Pareizi |
+| 3.  |                  |                           | 1. un 2. parole = k18t                                           | Paziņojums, ka parole ir pārāk īsa – tai jābūt vismaz 6 simbolu garai | Pareizi |
+| 4.  | 11.2.            | Lietotāja paroles maiņa    | Pareizi dati spēkā esošā parole, jauna parole, atkārtoti jauna parole | Ieraksta rediģēšana datubāzē un paziņojums par veiksmīgu paroles maiņu | Pareizi |
+| 5.  |                  |                           | Spēkā esošā parole: r18opX2<br>Jauna parole: r18opX2              | Tiek parādīta kļūda, ka jaunajai parolei un esošajai jābūt atšķirīgām | Pareizi |
+| 6.  |                  |                           | Jauna parole: r18opX2<br>atkārtoti ievadīta jaunā parole: irwv8opX2 | Paziņojums, ka jaunā un atkārtoti ievadītā parole nesakrīt    | Pareizi |
+| 7.  | 7.1.             | Piedāvājumu paslēpšana/deaktivēšana | Vispirms uzklikšķinot uz pogas “Settiings” izvēlētajā konfigurācijas lapā, pēc tam atverot cilni “Manage Options” un noklikšķinot uz pogas “Deactivate” | Datubāzē ir mainījies statuss, pēc kā piedāvājums sākumlapā tiks atzīmēts kā neaktīvs. | Pareizi |
+| 8.  | 4.               | Pasūtījuma veikšana        | Pareizi dati Vārds, Uzvārds, telefona numurs, izvēles rūtiņa priekš nosacījumiem | Ieraksts ir pievienots datubāzei, un lietotājam tiek nosūtīts paziņojums par veikmīgo pasūtīšanu. | Pareizi |
+| 9.  |                  |                           | Ir ievadīti visi lauki, izņemot vārdu, un arī nav atzīmēta atbilstošā izvēles rūtiņa priekš nosacījumiem | Tiek parādīts logs ar vispārējo tekstu, kur norādīts, kā aizpildīt šo veidlapu. Šajā gadījumā ir nepieciešams aizpildīt visus laukus | Pareizi |
+| 10. |                  |                           | Telefona numurs: 2413                                            | Tiks parādīts kļūdas ziņojumu logs, jo nosacījumos ir minēts, ka telefona numuram jābūt vismaz 5 simbolus garumā | Pareizi |
+| 11. | 10.1.            | Lietotāju komentāru dzēšana | Peles klikšķis uz pogas “Delete” blakus attiecīgajam komentāram    | Ieraksts tiek dzēsts no datubāzes, un šis ieraksts nav redzams komentāru lapā | Pareizi |
+
 
 1.Pirmajā testa gadījumā pārbaudīsim reģistrācijas funkciju.
 

@@ -180,4 +180,4 @@ Fiziskajā līmenī dati ir organizēti un glabājas, izmantojot tabulu saišu s
 
 ![DP4-1 Konstantīns Kotovičs Datubāzes fiziskās struktūras shēma](https://github.com/rvt-prog-kval-24/DP41-KonstantinsKotovics-TimeklaLietotneAutomasinuMeklesanaiUnPardosanaiTiessaiste/blob/main/documentation/atteli/16.%20att.%20Datubāzes%20fiziskās%20struktūras%20shēma.png)
 
-11. att. Datubāzes fiziskās struktūras shēma
+16. att. Datubāzes fiziskās struktūras shēma

@@ -46,6 +46,8 @@ Ir plānotas vairākas funkcijas:
 
 7. [Sweetalert](https://sweetalert2.github.io) - tika ņemta pirmā versija: "https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js", bet aktuālā saite ir ar otro versiju. Tika ņemts prieks apstiprinājuma vai kļūdas parādīšanas logam.
 
+8. [uiverse](https://uiverse.io/SouravBandyopadhyay/giant-squid-24) - tika izmantots priekš piedāvājuma kartiņām (css).
+
 ## Uzstādīšanas instrukcija
 Lai vietne darbotos uz jūsu paša datora, ir nepieciešams veikt instalācijas un palaišanas procesu. Zemāk esošajā instrukcijā ir sniegta detalizēta informācija par katru soli, lai nodrošinātu veiksmīgu vietnes iedarbināšanu lokāli:
 

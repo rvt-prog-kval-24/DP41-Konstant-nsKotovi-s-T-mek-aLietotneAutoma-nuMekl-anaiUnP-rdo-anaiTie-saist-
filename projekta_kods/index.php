@@ -23,20 +23,33 @@ if (isset($_GET['searchBtn'])) {
     $offers = $searchOption->searchOffers($search, $selectedBrand, $selectedModel, $selectedType, $selectedYear, $selectedColor, $selectedTransmission, $currentMinPrice, $currentMaxPrice);
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['brand']) && !isset($_GET['searchBtn'])) {
+    $brand = $_GET['brand'];
+    $models = $offer->getModelsByBrand($brand);
+
+    if ($models === false) {
+        echo json_encode(['error' => 'Failed to fetch models']);
+    } else {
+        echo json_encode($models);
+    }
+    exit;
+}
+
+$search = $_GET['search'] ?? '';
 $selectedType = $_GET['type'] ?? '';
 $selectedBrand = $_GET['brand'] ?? '';
 $selectedColor = $_GET['color'] ?? '';
 $selectedTransmission = $_GET['transmission'] ?? '';
-
-require_once 'includes/car_body_types.php';
-require_once 'includes/car_colors.php';
-require_once 'includes/car_brands.php';
-require_once 'includes/car_models.php';
-require_once 'includes/transmissions_types.php';
-
 $selectedYear = $_GET['year'] ?? '';
 $currentMinPrice = $_GET['minPrice'] ?? '';
 $currentMaxPrice = $_GET['maxPrice'] ?? '';
+
+require_once 'includes/car_body_types.php';
+
+$allTransmissions = $offer->getAllTransmissions();
+$allColors = $offer->getAllColors();
+
+$carBrands = $offer->getAllBrands();
 
 ?>
 
@@ -83,7 +96,7 @@ $currentMaxPrice = $_GET['maxPrice'] ?? '';
 
 <div class="main-wrapper">
     <form action="" method="get" class="search-form">
-        <input type="text" class="search_input" placeholder="Search..." name="search" maxlength="50">
+        <input type="text" class="search_input" placeholder="Search..." name="search" value="<?php echo htmlspecialchars($search, ENT_QUOTES); ?>" maxlength="50">
         <button type="submit" name="searchBtn" class="search-btn">Search</button>
     
     
@@ -112,10 +125,8 @@ $currentMaxPrice = $_GET['maxPrice'] ?? '';
                     <select name="brand" class="form-control" id="brand">
                         <option value="">All Brands</option>
                         <?php foreach ($carBrands as $brand) { ?>
-                            <option value="<?php echo $brand ?>" <?php echo $brand == $selectedBrand ? 'selected' : '' ?>>
-                                <?php echo $brand ?>
-                            </option>
-                        <?php } print_r($_GET) ?>
+                            <option value="<?php echo $brand ?>"><?php echo $brand ?></option>
+                        <?php } ?>
                     </select>
                 </div>
 
@@ -127,66 +138,75 @@ $currentMaxPrice = $_GET['maxPrice'] ?? '';
                 </div>
 
                 <script>
-                    var modelsByBrand = <?php echo json_encode($modelsByBrand); ?>;
-
                     document.getElementById('brand').addEventListener('change', function() {
                         var selectedBrand = this.value;
                         var modelSelect = document.getElementById('model');
-                        var modelGroup = document.getElementById('model-group');
-
-                        if (selectedBrand) {
-                            modelSelect.innerHTML = '<option value="">Select Brand First</option>';
-                            
-                            if (modelsByBrand[selectedBrand]) {
-                                modelsByBrand[selectedBrand].forEach(function(model) {
-                                    var option = document.createElement('option');
-                                    option.value = model;
-                                    option.textContent = model;
-                                    modelSelect.appendChild(option);
-                                });
-                            }
-                            modelSelect.disabled = false;
-                            
-                            modelSelect.querySelector('option').textContent = 'All models';
-
-                            modelSelect.value = '';
-                        } else {
-                            modelSelect.disabled = true;
-                            modelSelect.innerHTML = '<option value="">Select Brand First</option>';
-                        }
-                    });
-
-                    document.addEventListener('DOMContentLoaded', function() {
-                        var urlParams = new URLSearchParams(window.location.search);
-                        var selectedBrand = urlParams.get('brand');
-                        var selectedModel = urlParams.get('model');
-                        var modelSelect = document.getElementById('model');
-
+                        
                         modelSelect.innerHTML = '<option value="">Select Brand First</option>';
 
                         if (selectedBrand) {
-                            if (modelsByBrand[selectedBrand]) {
-                                modelsByBrand[selectedBrand].forEach(function(model) {
+                            fetch('index.php?brand=' + encodeURIComponent(selectedBrand)) 
+                                .then(response => {
+                                    if (!response.ok) {
+                                        throw new Error('Network response was not ok');
+                                    }
+                                    return response.json();
+                                })
+                                .then(data => {
+                                    modelSelect.disabled = false;
+                                    modelSelect.innerHTML = '<option value="">All models</option>';
+
+                                    data.forEach(function(model) {
+                                        var option = document.createElement('option');
+                                        option.value = model;
+                                        option.textContent = model;
+                                        modelSelect.appendChild(option);
+                                    });
+                                })
+                                .catch(error => {
+                                    console.error('Error fetching models:', error);
+                                });
+                        } else {
+                            modelSelect.disabled = true;
+                        }
+                    });
+
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var selectedBrand = urlParams.get('brand');
+                    var selectedModel = urlParams.get('model');
+                    var modelSelect = document.getElementById('model');
+
+                    if (selectedBrand) {
+                        document.getElementById('brand').value = selectedBrand;
+                        fetch('index.php?brand=' + encodeURIComponent(selectedBrand))
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error('Network response was not ok');
+                                }
+                                return response.json();
+                            })
+                            .then(data => {
+                                modelSelect.disabled = false;
+                                modelSelect.innerHTML = '<option value="">All models</option>';
+
+                                data.forEach(function(model) {
                                     var option = document.createElement('option');
                                     option.value = model;
                                     option.textContent = model;
                                     modelSelect.appendChild(option);
                                 });
-                            }
-                            modelSelect.disabled = false;
-                            modelSelect.querySelector('option').textContent = 'All models';
 
-                            if (selectedModel && modelsByBrand[selectedBrand] && modelsByBrand[selectedBrand].includes(selectedModel)) {
-                                modelSelect.value = selectedModel;
-                            } else {
-                                modelSelect.value = '';
-                            }
-                        } else {
-                            modelSelect.disabled = true;
-                            modelSelect.querySelector('option').textContent = 'Select Brand First';
-                        }
-                    });
+                                if (selectedModel && data.includes(selectedModel)) {
+                                    modelSelect.value = selectedModel;
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Error fetching models:', error);
+                            });
+                    }
                 </script>
+
+
 
                 <div class="form-group">
                     <label for="year"><strong>Manufacturing Year:</strong></label>
@@ -208,11 +228,11 @@ $currentMaxPrice = $_GET['maxPrice'] ?? '';
                     <label for="color"><strong>Color:</strong></label>
                     <select name="color" class="form-control" id="color">
                         <option value="">All Colors</option>
-                        <?php foreach ($carColors as $color) { ?>
-                            <option value="<?php echo $color ?>" <?php echo $color == $selectedColor ? 'selected' : '' ?>>
-                                <?php echo $color ?>
+                        <?php foreach ($allColors as $color) { ?>
+                            <option value="<?php echo $color['color_name'] ?>" <?php echo $color['color_name'] == $selectedColor ? 'selected' : '' ?>>
+                                <?php echo $color['color_name'] ?>
                             </option>
-                        <?php } print_r($_GET) ?>
+                        <?php } ?>
                     </select>
                 </div>
 
@@ -231,12 +251,12 @@ $currentMaxPrice = $_GET['maxPrice'] ?? '';
                 <div class="form-group">
                     <label for="transmission"><strong>Transmissions:</strong></label>
                     <select name="transmission" class="form-control" id="transmission">
-                        <option value="">All transmissions</option>
-                        <?php foreach ($transmissions as $transmission) { ?>
-                            <option value="<?php echo $transmission ?>" <?php echo $transmission == $selectedTransmission ? 'selected' : '' ?>>
-                                <?php echo $transmission ?>
+                        <option value="">All Transmissions</option>
+                        <?php foreach ($allTransmissions as $transmission) { ?>
+                            <option value="<?php echo $transmission['transmission'] ?>" <?php echo $transmission['transmission'] == $selectedTransmission ? 'selected' : '' ?>>
+                                <?php echo $transmission['transmission'] ?>
                             </option>
-                        <?php } print_r($_GET) ?>
+                        <?php } ?>
                     </select>
                 </div>
             </div>

@@ -19,6 +19,47 @@
 CREATE DATABASE IF NOT EXISTS `mariadb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `mariadb`;
 
+-- Dumping structure for table mariadb.all_colors
+CREATE TABLE IF NOT EXISTS `all_colors` (
+  `color_name` varchar(50) DEFAULT NULL,
+  `color_name_id` int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`color_name_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table mariadb.all_colors: ~0 rows (approximately)
+DELETE FROM `all_colors`;
+INSERT INTO `all_colors` (`color_name`, `color_name_id`) VALUES
+	('Red', 3),
+	('White', 5),
+	('Red', 6),
+	('Black', 7);
+
+-- Dumping structure for table mariadb.all_engines
+CREATE TABLE IF NOT EXISTS `all_engines` (
+  `engine` varchar(50) DEFAULT NULL,
+  `engine_name_id` int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`engine_name_id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table mariadb.all_engines: ~2 rows (approximately)
+DELETE FROM `all_engines`;
+INSERT INTO `all_engines` (`engine`, `engine_name_id`) VALUES
+	('Petrol', 3),
+	('Diesel', 4);
+
+-- Dumping structure for table mariadb.all_transmissions
+CREATE TABLE IF NOT EXISTS `all_transmissions` (
+  `transmission` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `transmission_name_id` int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`transmission_name_id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table mariadb.all_transmissions: ~2 rows (approximately)
+DELETE FROM `all_transmissions`;
+INSERT INTO `all_transmissions` (`transmission`, `transmission_name_id`) VALUES
+	('Manual', 4),
+	('Automatic', 5);
+
 -- Dumping structure for table mariadb.car_colors
 CREATE TABLE IF NOT EXISTS `car_colors` (
   `colorID` int NOT NULL AUTO_INCREMENT,
@@ -69,9 +110,9 @@ CREATE TABLE IF NOT EXISTS `comments` (
   PRIMARY KEY (`commentID`),
   KEY `userID` (`userID`),
   CONSTRAINT `userID` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=424 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_latvian_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=447 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_latvian_ci;
 
--- Dumping data for table mariadb.comments: ~69 rows (approximately)
+-- Dumping data for table mariadb.comments: ~62 rows (approximately)
 DELETE FROM `comments`;
 INSERT INTO `comments` (`commentID`, `comment`, `userID`, `date`, `parent_comment_id`) VALUES
 	(252, 'Thanks!', 46, '2023-04-30 00:00:00', NULL),
@@ -100,8 +141,6 @@ INSERT INTO `comments` (`commentID`, `comment`, `userID`, `date`, `parent_commen
 	(343, '2 test', 50, '2024-03-06 00:00:00', 341),
 	(344, 'io', 50, '2024-03-06 00:00:00', 341),
 	(345, 'ok', 50, '2024-03-06 00:00:00', 343),
-	(346, 'new', 50, '2024-03-06 00:00:00', NULL),
-	(347, 'ko', 50, '2024-03-06 00:00:00', 346),
 	(348, 'rabotaet?', 50, '2024-03-06 00:00:00', 342),
 	(349, 'DAAAA!!!!', 55, '2024-03-06 00:00:00', 348),
 	(350, 'datetime', 50, '2024-03-06 03:08:27', NULL),
@@ -121,19 +160,8 @@ INSERT INTO `comments` (`commentID`, `comment`, `userID`, `date`, `parent_commen
 	(373, 'kruto', 1, '2024-03-09 01:31:42', 370),
 	(374, 'shakira shakira', 1, '2024-03-09 01:32:39', 362),
 	(375, 'vc', 1, '2024-03-12 16:00:16', NULL),
-	(377, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque magnam ab maiores modi eligendi dolorum quae atque voluptatem hic cum laudantium asperiores possimus magni tenetur, iure autem rem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque magnam ab maiores modi eligendi dolorum quae atque voluptatem hic cum laudantium asperiores possimus magni tenetur, iure autem rem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque magnam ab maiores modi eligendi dolorum quae atque voluptatem hic cum laudantium asperiores possimus magni tenetur, iure autem rem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. A', 1, '2024-03-12 16:57:55', NULL),
-	(379, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque magnam ab maiores modi eligendi dolorum quae atque voluptatem hic cum laudantium asperiores possimus magni tenetur, iure autem rem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque magnam ab maiores modi eligendi dolorum quae atque voluptatem hic cum laudantium asperiores possimus magni tenetur, iure autem rem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque magnam ab maiores modi eligendi dolorum quae atque voluptatem hic cum laudantium asperiores possimus magni tenetur, iure autem rem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. A', 1, '2024-03-12 16:59:48', 377),
-	(381, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque magnam ab maiores modi eligendi dolorum quae atque voluptatem hic cum laudantium asperiores possimus magni tenetur, iure autem rem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque magnam ab maiores modi eligendi dolorum quae atque voluptatem hic cum laudantium asperiores possimus magni tenetur, iure autem rem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque magnam ab maiores modi eligendi dolorum quae atque voluptatem hic cum laudantium asperiores possimus magni tenetur, iure autem rem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. A', 1, '2024-03-12 17:00:04', 379),
-	(384, 'hmmmmmmmmmmmm?', 1, '2024-03-12 17:09:37', 377),
-	(385, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque magnam ab maiores modi eligendi dolorum quae atque voluptatem hic cum laudantium asperiores possimus magni tenetur, iure autem rem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque magnam ab maiores modi eligendi dolorum quae atque voluptatem hic cum laudantium asperiores possimus magni tenetur, iure autem rem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque magnam ab maiores modi eligendi dolorum quae atque voluptatem hic cum laudantium asperiores possimus magni tenetur, iure autem rem consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. A', 1, '2024-03-12 17:12:26', 379),
-	(394, 'okok', 1, '2024-03-17 02:35:32', 377),
-	(395, 'not', 1, '2024-03-17 17:02:16', 377),
-	(396, 'stuff new', 1, '2024-03-17 17:02:58', 377),
-	(397, 'kirils pivanovs', 1, '2024-04-16 16:58:53', 377),
-	(398, '12', 1, '2024-04-18 01:38:06', 377),
 	(400, 'Very satisfied with the car dealership service. The car was delivered on time and in the promised condition. Definitely recommend!', 70, '2024-05-26 16:04:50', NULL),
 	(401, 'I agree, I had a similar experience. The staff was very helpful and professional.', 48, '2024-05-26 16:05:45', 400),
-	(402, 'I agree, I had a similar experience. The staff was very helpful and professional.', 48, '2024-05-26 16:06:09', 377),
 	(403, 'I also used their leasing options and have only positive feedback. Very friendly and understanding approach from the staff.', 48, '2024-05-26 16:07:28', NULL),
 	(404, 'Thank you for your positive review!', 1, '2024-05-26 16:09:03', 403),
 	(406, 'hi', 1, '2024-05-26 16:10:40', 400),
@@ -144,9 +172,10 @@ INSERT INTO `comments` (`commentID`, `comment`, `userID`, `date`, `parent_commen
 	(417, 'ty', 1, '2024-05-26 16:38:58', 411),
 	(419, 'nothing', 1, '2024-05-26 16:46:55', 401),
 	(420, 'something', 1, '2024-05-26 16:47:18', 400),
-	(421, 'nice, like', 70, '2024-05-26 16:48:38', 377),
-	(422, 'respect', 1, '2024-05-26 16:49:54', 421),
-	(423, 'wow', 1, '2024-05-26 16:50:28', 400);
+	(423, 'wow', 1, '2024-05-26 16:50:28', 400),
+	(424, 'now', 1, '2024-06-09 13:47:00', NULL),
+	(426, 'no', 1, '2024-06-09 13:47:12', 425),
+	(432, 'yep', 1, '2024-06-09 14:11:04', 431);
 
 -- Dumping structure for table mariadb.engine
 CREATE TABLE IF NOT EXISTS `engine` (
@@ -191,9 +220,9 @@ CREATE TABLE IF NOT EXISTS `notifications` (
   PRIMARY KEY (`notification_id`),
   KEY `topic_id` (`topic_id`),
   CONSTRAINT `topic_id` FOREIGN KEY (`topic_id`) REFERENCES `notification_topics` (`topic_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=206 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=226 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table mariadb.notifications: ~36 rows (approximately)
+-- Dumping data for table mariadb.notifications: ~56 rows (approximately)
 DELETE FROM `notifications`;
 INSERT INTO `notifications` (`notification_id`, `message`, `created_at`, `is_read`, `topic_id`) VALUES
 	(128, 'You have successfully registered! If you need <a href=\'infoPage.php\'>Help</a>, please visit the Help section.', '2024-03-17 00:11:41', 1, 9),
@@ -236,7 +265,27 @@ INSERT INTO `notifications` (`notification_id`, `message`, `created_at`, `is_rea
 	(202, 'Your password has been successfully changed!', '2024-05-26 18:50:03', 1, 15),
 	(203, 'Your password has been successfully changed!', '2024-05-26 18:56:34', 1, 15),
 	(204, 'Your password has been successfully changed!', '2024-05-26 18:58:07', 1, 15),
-	(205, 'Your password has been successfully changed!', '2024-05-26 19:03:46', 1, 15);
+	(205, 'Your password has been successfully changed!', '2024-05-26 19:03:46', 1, 15),
+	(206, 'Your order has been successfully completed! Please wait while our staff contacts You. You can check your order <a href=\'profile.php\'>here</a> in the \'My Orders\' tab.', '2024-06-02 19:40:11', 1, 2),
+	(207, 'You have successfully registered! If you need <a href=\'infoPage.php\'>Help</a>, please visit the Help section.', '2024-06-02 20:32:44', 1, 18),
+	(208, 'You have received a reply from \'stuff\' to your comment: \'yes\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 10:47:08', 1, 1),
+	(209, 'You have received a reply from \'stuff\' to your comment: \'no\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 10:47:12', 1, 1),
+	(210, 'You have received a reply from \'stuff\' to your comment: \'sd\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:09:35', 1, 1),
+	(211, 'You have received a reply from \'stuff\' to your comment: \'calc\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:09:42', 1, 1),
+	(212, 'You have received a reply from \'stuff\' to your comment: \'ahah\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:10:17', 1, 1),
+	(213, 'You have received a reply from \'stuff\' to your comment: \'yep\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:10:57', 1, 1),
+	(214, 'You have received a reply from \'stuff\' to your comment: \'yep\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:11:04', 1, 1),
+	(215, 'You have received a reply from \'stuff\' to your comment: \'2\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:38:26', 1, 1),
+	(216, 'You have received a reply from \'stuff\' to your comment: \'3\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:38:29', 1, 1),
+	(217, 'You have received a reply from \'stuff\' to your comment: \'2\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:42:53', 1, 1),
+	(218, 'You have received a reply from \'stuff\' to your comment: \'3\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:42:57', 1, 1),
+	(219, 'You have received a reply from \'stuff\' to your comment: \'2\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:43:27', 1, 1),
+	(220, 'You have received a reply from \'stuff\' to your comment: \'3\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:43:31', 1, 1),
+	(221, 'You have received a reply from \'stuff\' to your comment: \'2\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:46:39', 1, 1),
+	(222, 'You have received a reply from \'stuff\' to your comment: \'3\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-09 11:46:43', 1, 1),
+	(223, 'You have successfully registered! If you need <a href=\'infoPage.php\'>Help</a>, please visit the Help section.', '2024-06-09 12:25:15', 0, 21),
+	(224, 'Your order has been successfully completed! Please wait while our staff contacts You. You can check your order <a href=\'profile.php\'>here</a> in the \'My Orders\' tab.', '2024-06-10 16:26:23', 1, 2),
+	(225, 'You have received a reply from \'stuff\' to your comment: \'hello\'. Visit the <a href=\'forum.php\'>forum</a> to view the response.', '2024-06-10 19:43:09', 1, 1);
 
 -- Dumping structure for table mariadb.notification_topics
 CREATE TABLE IF NOT EXISTS `notification_topics` (
@@ -247,9 +296,9 @@ CREATE TABLE IF NOT EXISTS `notification_topics` (
   PRIMARY KEY (`topic_id`),
   KEY `user_id` (`userID`),
   CONSTRAINT `user_id` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table mariadb.notification_topics: ~12 rows (approximately)
+-- Dumping data for table mariadb.notification_topics: ~18 rows (approximately)
 DELETE FROM `notification_topics`;
 INSERT INTO `notification_topics` (`topic_id`, `topic_name`, `status`, `userID`) VALUES
 	(1, 'Forum', 'enable', 1),
@@ -263,7 +312,13 @@ INSERT INTO `notification_topics` (`topic_id`, `topic_name`, `status`, `userID`)
 	(12, 'Profile', 'enable', 70),
 	(13, 'Forum', 'enable', 71),
 	(14, 'Orders', 'enable', 71),
-	(15, 'Profile', 'enable', 71);
+	(15, 'Profile', 'enable', 71),
+	(16, 'Forum', 'enable', 72),
+	(17, 'Orders', 'enable', 72),
+	(18, 'Profile', 'enable', 72),
+	(19, 'Forum', 'enable', 73),
+	(20, 'Orders', 'enable', 73),
+	(21, 'Profile', 'enable', 73);
 
 -- Dumping structure for table mariadb.offers
 CREATE TABLE IF NOT EXISTS `offers` (
@@ -336,14 +391,15 @@ CREATE TABLE IF NOT EXISTS `order` (
   CONSTRAINT `orderDetailsID` FOREIGN KEY (`orderDetailsID`) REFERENCES `specific_details` (`detailsID`),
   CONSTRAINT `orderOfferID` FOREIGN KEY (`orderOfferID`) REFERENCES `offers` (`offerID`),
   CONSTRAINT `orderUserID` FOREIGN KEY (`orderUserID`) REFERENCES `user` (`userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=265 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_latvian_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=267 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_latvian_ci;
 
--- Dumping data for table mariadb.order: ~4 rows (approximately)
+-- Dumping data for table mariadb.order: ~3 rows (approximately)
 DELETE FROM `order`;
 INSERT INTO `order` (`orderID`, `orderDate`, `name`, `surname`, `telephone`, `status`, `orderUserID`, `orderOfferID`, `orderDetailsID`) VALUES
 	(260, '2024-05-17', 'Kostja', 'Kotovich', '23423443344534', 'Done', 1, 70, 16),
 	(261, '2024-05-25', 'Kostja', 'Kotovich', '234234', 'Done', 55, 90, 13),
-	(262, '2024-05-25', 'Kostja', 'Kotovich', '234234', 'Done', 1, 90, 13);
+	(262, '2024-05-25', 'Kostja', 'Kotovich', '234234', 'Done', 1, 90, 13),
+	(266, '2024-06-10', 'Konstantins', 'Kotovich', '32423423423', 'Done', 1, 68, 15);
 
 -- Dumping structure for table mariadb.specific_details
 CREATE TABLE IF NOT EXISTS `specific_details` (
@@ -369,10 +425,10 @@ CREATE TABLE IF NOT EXISTS `specific_details` (
 DELETE FROM `specific_details`;
 INSERT INTO `specific_details` (`detailsID`, `colorID`, `offersInfoID`, `transmissionID`, `created_at`, `engineID`, `active_status`) VALUES
 	(12, 49, 69, 2, '2024-04-18 12:09:13', 8, 0),
-	(13, 50, 69, 3, '2024-04-24 21:23:38', 9, 0),
-	(14, 28, 71, 4, '2024-04-24 22:00:06', 10, 0),
+	(13, 50, 69, 3, '2024-04-24 21:23:38', 9, 1),
+	(14, 28, 71, 4, '2024-04-24 22:00:06', 10, 1),
 	(15, 29, 72, 5, '2024-04-24 22:04:59', 11, 0),
-	(16, 30, 73, 6, '2024-04-24 22:05:00', 12, 0),
+	(16, 30, 73, 6, '2024-04-24 22:05:00', 12, 1),
 	(19, 35, 76, NULL, NULL, NULL, NULL);
 
 -- Dumping structure for table mariadb.transmission
@@ -419,7 +475,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `roleID` int NOT NULL,
   `rules_accepted` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_latvian_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_latvian_ci;
 
 -- Dumping data for table mariadb.user: ~14 rows (approximately)
 DELETE FROM `user`;
@@ -429,7 +485,7 @@ INSERT INTO `user` (`userID`, `username`, `email`, `password`, `picture`, `roleI
 	(46, 'konstantins', 'konstantins@gmail.com', '$2y$10$56e9Nl1IXJWYOcKYrgKncOAT4p99/PYH1UtvPgHjPKSUgJmZbQ58O', NULL, 0, NULL),
 	(48, 'Konstantins Kotovich', 'kostja@gmail.com', '$2y$10$t80eqpaNFAky2CFIe8B5MO/AVwBujCBKrX90U6ysi5xh4GgzJVXfa', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, 1),
 	(50, '1234', '1234@1234.com', '$2y$10$wMepL4xJFeGY2BU4RbGx2e6jC5mCKkp7KEqHA.GZab9RQcC2JrLzS', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
-	(55, '123', '123@123.com', '$2y$10$QTOYR2Ktjp/jOL1aOFoqduXiTPdoTf/8ngSUZuvDMd6o9nhHjlhJe', _binary 0x696d672f6176617461722f68756d61737072696b6f6c2e706e67, 0, 1),
+	(55, '123', '123@123.com', '$2y$10$QTOYR2Ktjp/jOL1aOFoqduXiTPdoTf/8ngSUZuvDMd6o9nhHjlhJe', _binary 0x696d672f6176617461722f363636353965363035376463622e706e67, 0, 1),
 	(56, '12345', '12345@a.com', '$2y$10$WvxQcssDA7WqShLuc.i6WuFKe8iBnAXGabtziroIlPzHOaPldvDIm', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
 	(57, 'Kostja', 'kostja.kotovich@inbox.lv', '$2y$10$VCnCqu/X3vJskhZU8po9cuzCDEm4H.cOx6luPXbhzWIU8wd.IrEJ6', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
 	(59, '123456', 'kostja.kohghtovich@gmail.com', '$2y$10$PBRYzRNI4eDNI4ozoEVH5.E2/kOrO080adz7pzeRapR2emhyymMrS', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
@@ -439,7 +495,9 @@ INSERT INTO `user` (`userID`, `username`, `email`, `password`, `picture`, `roleI
 	(66, 'o7d6', 'kostja.kotofhgfgvich@gmail.com', '$2y$10$td33qZ.ttr9qTs9hYiwfU.Np.kUCqICbnbeCH3.5OVz6ghRUZtelS', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
 	(69, 'kostjaKO', 'kostjaKO@gmaiil.com', '$2y$10$.4TT6RhelEovxMPILmG9i./aqdtiZWvs/A8endcwKfFd7kcHNPh.K', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, 1),
 	(70, 'kostjaKO1', 'kostjaKO1@gmail.com', '$2y$10$0Q8D4YVvJdES5iBOR.wXoO65//vNlzbpyeSijuJjjTuGspb7Dol3q', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, 1),
-	(71, 'Konstantin Kotovich', 'kostja.kotov@gmail.com', '$2y$10$wJCMTskxUZQOs2JgcJFaUuo1NsQXLdu2HyChHKcGDar1d2WwK8Qde', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL);
+	(71, 'Konstantin Kotovich', 'kostja.kotov@gmail.com', '$2y$10$wJCMTskxUZQOs2JgcJFaUuo1NsQXLdu2HyChHKcGDar1d2WwK8Qde', _binary 0x696d672f6176617461722f64656661756c742e706e67, 0, NULL),
+	(72, 'staff', 'staff@staff.com', '$2y$10$XzTQdsYTVGr2S4PLNAvTxempt2H0mM3NO/aLR.Y4uW4n5QQ2lxXlm', _binary 0x696d672f6176617461722f64656661756c742e706e67, 1, NULL),
+	(73, 'Ozols', 'Ozols@gmail.com', '$2y$10$V43nMTxb7n.oduGU/fG63OddBCPK61XM6GrS4xesPPxqXQbXfduXq', _binary 0x696d672f6176617461722f363636356131353439323132632e6a7067, 0, NULL);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

@@ -97,7 +97,13 @@ if (isset($_POST['submit_order'])) {
     }
   } 
 
+  $allColors = $offer->getAllColors();
+  $allTransmissions = $offer->getAllTransmissions();
+  $allEngines = $offer->getAllEngines();
+
+  require_once 'includes/car_body_types.php';
 ?>
+
 <html>
 <head>
 
